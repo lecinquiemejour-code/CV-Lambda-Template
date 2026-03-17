@@ -41,7 +41,7 @@ export default function App() {
     {
       id: 'welcome',
       role: 'ai',
-      content: greetingText
+      content: identity.ai_persona.greeting
     }
   ]);
   const [input, setInput] = useState('');
