@@ -158,31 +158,23 @@ Ne présente cette étape qu'après validation du CHECKPOINT Étape 1.
 
 ## 🔱 Étape 2 : Récupérer le projet (Le Fork)
 
-Tu vas faire ta "photocopie" personnelle du projet CV IA lambda.
+### 2.1 — Copie le lien du modèle
+- **Action** : Copie ce lien (tu en auras besoin juste après) :
+  ```
+  https://github.com/lecinquiemejour-code/CV-Lamba-Template
+  ```
 
-### 2.1 — Aller sur le modèle
-- **Action** : Ouvre cette page : [github.com/lecinquiemejour-code/CV-Template-Lambda](https://github.com/lecinquiemejour-code/CV-Template-Lambda)
+### 2.2 — Demande à Antigravity de tout faire
+- **Action** : Dans le chat Antigravity, colle ce message :
+  > *"Fork ce dépôt dans mon compte GitHub et clone-le dans mon dossier CVIA : https://github.com/lecinquiemejour-code/CV-Lamba-Template"*
+- **Résultat** : Je forke le projet dans ton compte GitHub, puis je le clone dans ton dossier `CVIA/`. **Tu n'as rien à faire d'autre.** 🤖
 
-### 2.2 — Cliquer sur "Fork"
-- **Action** : En haut à droite, clique sur le bouton **Fork**.
-- **Résultat** : Une copie exacte du projet apparaît dans **ton** compte GitHub, à ton nom.
-
-### 2.3 — Préparer un dossier sur ton ordinateur
-- **Action** : Crée un dossier nommé `MonCVinteractif` dans tes Documents. C'est là que tout s'installera.
-
-### 2.4 — Cloner (télécharger) le projet
-- **Action** : Sur ta page GitHub (ton Fork), clique sur le bouton vert **<> Code**.
-- **Action** : Clique sur l'icône "copier" à côté de l'adresse en `.git`.
-- **Action** : Dans le chat Antigravity, tape :
-  > *"Peux-tu cloner ce dépôt dans mon dossier MonCVinteractif ? [colle l'adresse .git]"*
-- **Résultat** : Antigravity effectue le clonage pour toi — tu n'as rien à faire en dehors du chat. 🤖
-
-> [!TIP]
-> **Tu ne trouves pas le bouton Fork ?** Assure-toi d'être connecté à GitHub. Le bouton Fork est en haut à droite, à côté de l'étoile ⭐.
+> [!NOTE]
+> **Première connexion à GitHub depuis Antigravity ?** Une fenêtre de navigateur s'ouvrira pour que tu te connectes à ton compte. C'est une étape unique — tu ne la referas plus.
 
 <!-- [CHECKPOINT ÉTAPE 2]
 Question à poser à l'utilisateur avant de passer à l'Étape 3 :
-"Est-ce que le projet est bien téléchargé dans ton dossier MonCVinteractif ? 📁
+"Est-ce que le dossier `CV-Lamba-Template` est bien apparu dans ton dossier CVIA ? 📁
 Tu peux vérifier dans ton explorateur de fichiers. Dis-moi 'Oui c'est là !' quand c'est bon !"
 -->
 
@@ -201,7 +193,7 @@ Ne présente cette étape qu'après validation du CHECKPOINT Étape 2.
 C'est le moment crucial où l'assistant prend les commandes !
 
 - **Action** : Dans Antigravity, clique sur **File** > **Open Folder**.
-- **Action** : Sélectionne le dossier que tu viens de cloner (`CV-IA-lambda`).
+- **Action** : Sélectionne le dossier `CV-Lamba-Template` qui vient d'apparaître dans ton dossier `CVIA/`.
 - **Résultat** : Antigravity analyse tout le projet. **Le chat est maintenant actif et je peux modifier tes fichiers !**
 
 > [!NOTE]
