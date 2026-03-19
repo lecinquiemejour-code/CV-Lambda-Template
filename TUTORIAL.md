@@ -130,26 +130,19 @@ C'est l'endroit où ton code va habiter.
 Netlify prend tes fichiers et les transforme en site web accessible à tous.
 - **Action** : Va sur [netlify.com](https://www.netlify.com/) et connecte-toi **avec ton compte GitHub**.
 
-### 1.3 — Google AI Studio : le cerveau de ton site
-C'est ici que tu récupères la "clé API" — le code secret qui permettra au chatbot de répondre.
-- **Action** : Connecte-toi sur [Google AI Studio](https://aistudio.google.com/) avec ton compte Google.
-- **Action** : Clique sur **Get API key** puis **Create API key**. Copie précieusement ce code.
-
-> [!IMPORTANT]
-> **Ta clé API est précieuse et secrète.** Ne la partage jamais publiquement.
-> Une fois dans Antigravity, dis-moi simplement : *"Voici ma clé API : [colle ta clé]. Peux-tu l'installer ?"*
+### 1.3 — Google AI Studio : ton compte pour la clé API (plus tard)
+Google AI Studio est lié à ton compte Google AI Pro — celui que tu utilises déjà avec Antigravity. Tu n'as rien à faire dessus maintenant, mais assure-toi que le compte est bien actif.
+- **Action** : Vérifie que ton abonnement **Google AI Pro** est bien actif sur [gemini.google/subscriptions](https://gemini.google/subscriptions/). C'est tout pour l'instant !
 
 > [!TIP]
-> **Pourquoi deux "IA" différentes ?**
-> - **Antigravity Pro** : pour t'aider à *construire* le CV.
-> - **Clé AI Studio (gratuite)** : pour que ton CV *parle tout seul* une fois en ligne.
+> **À quoi ça servira ?** À l'Étape 6, on retournera sur Google AI Studio pour y générer une clé API — le code qui permettra à ton CV en ligne de dialoguer avec l'IA.
 
 <!-- [CHECKPOINT ÉTAPE 1]
 Poser les 2 questions DANS L'ORDRE avant de passer à l'Étape 2 :
 1. "Tu as bien créé le dossier CVIA dans tes Documents avec le sous-dossier _ressources-cv dedans ? 📁
    Et tu y as glissé ton CV et ta photo au minimum ?"
    → Si non, guide-le pour créer les dossiers. Si oui, passe à la question 2.
-2. "Parfait ! Tu as bien tes 3 comptes (GitHub, Netlify, AI Studio) et ta clé API copiée quelque part ? 🗝️
+2. "Parfait ! Tu as bien tes 3 comptes (GitHub, Netlify, et un compte Google) ? ✅
    Réponds 'C'est bon !' et on passe à la récupération du projet !"
 -->
 
@@ -180,7 +173,9 @@ Tu vas faire ta "photocopie" personnelle du projet CV IA lambda.
 ### 2.4 — Cloner (télécharger) le projet
 - **Action** : Sur ta page GitHub (ton Fork), clique sur le bouton vert **<> Code**.
 - **Action** : Clique sur l'icône "copier" à côté de l'adresse en `.git`.
-- **Action** : Dans Antigravity, clique sur **Clone Repository**, colle l'adresse, et sélectionne ton dossier `MonCVinteractif`.
+- **Action** : Dans le chat Antigravity, tape :
+  > *"Peux-tu cloner ce dépôt dans mon dossier MonCVinteractif ? [colle l'adresse .git]"*
+- **Résultat** : Antigravity effectue le clonage pour toi — tu n'as rien à faire en dehors du chat. 🤖
 
 > [!TIP]
 > **Tu ne trouves pas le bouton Fork ?** Assure-toi d'être connecté à GitHub. Le bouton Fork est en haut à droite, à côté de l'étoile ⭐.
@@ -423,7 +418,25 @@ C'est l'étape finale. Accompagne avec enthousiasme !
 
 Ton CV est prêt sur ton ordinateur. Il doit maintenant être visible par les recruteurs du monde entier.
 
-### 6.1 — Lier GitHub à Netlify et configurer la clé
+### 6.1 — Créer et récupérer ta clé API Google
+
+C'est le moment d'activer le cerveau de ton chatbot. La clé API est un code secret qui permet à ton CV en ligne de communiquer avec l'IA de Google.
+
+**Créer ta clé sur Google AI Studio :**
+- **Action** : Va sur [Google AI Studio](https://aistudio.google.com/) et connecte-toi avec ton compte Google.
+- **Action** : Dans le menu à gauche, clique sur **Get API key**, puis sur **Create API key**.
+- **Action** : Copie précieusement ce long code — c'est ta clé, garde-la secrète.
+
+> [!IMPORTANT]
+> **Ta clé API est secrète.** Ne la partage jamais publiquement (pas dans un message, pas sur GitHub).
+
+**Installer la clé dans ton projet :**
+- **Action** : Dans le chat Antigravity, dis-moi :
+  > *"Voici ma clé API Google : [colle ta clé]. Peux-tu l'installer dans le projet ?"*
+- **Résultat** : J'ajoute ta clé dans le fichier `.env` du projet — le chatbot sera actif en prévisualisation locale. 🤖
+
+### 6.2 — Lier GitHub à Netlify et mettre le site en ligne
+
 - **Action** : Va sur ton compte [Netlify](https://app.netlify.com/).
 - **Action** : Clique sur **Add new site** > **Import an existing project** > **GitHub**.
 - **Action** : Sélectionne ton projet `CV-IA-lambda`.
@@ -434,7 +447,7 @@ Ton CV est prêt sur ton ordinateur. Il doit maintenant être visible par les re
 - **Action** : Clique sur **Create and Deploy**.
 - **Résultat 🎉** : Netlify te donne une URL. **Ton site est en ligne et son intelligence est activée !**
 
-### 6.2 — La boucle vertueuse : Le PDCA
+### 6.3 — La boucle vertueuse : Le PDCA
 Le déploiement n'est pas une fin, c'est le début d'un cycle d'amélioration :
 
 | Phase | Action |
