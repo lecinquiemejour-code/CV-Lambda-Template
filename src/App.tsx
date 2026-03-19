@@ -8,10 +8,11 @@ import ReactMarkdown from 'react-markdown';
 import { Send, User, Bot, Loader2, Sparkles, ExternalLink, X, Mail, Linkedin, Printer, Download } from 'lucide-react';
 import { sendMessageToAI } from './services/ai';
 import identity from './content/identity.json';
-import profilePhoto from './assets/photo.jpg';
-import botAvatar from './assets/bot-avatar.jpg';
-// Nous utilisons maintenant le chemin statique /public/cv_aime_shibainu.pdf
-const cvPdfLink = "/cv_aime_shibainu.pdf";
+
+// Photos et PDF servis depuis public/, noms configurés dans identity.json
+const profilePhoto = `/${identity.basics.photo}`;
+const botAvatar = `/${identity.basics.bot_avatar}`;
+const cvPdfLink = `/${identity.basics.cv_pdf_name}`;
 
 const BotAvatar = () => (
   <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm overflow-hidden p-[2px]">
