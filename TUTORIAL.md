@@ -53,7 +53,7 @@ FIN DES INSTRUCTIONS DE RÔLE
 > L'IA lira ce fichier et t'accompagnera étape par étape, sans te laisser seul face aux questions techniques. 🤖
 
 > [!IMPORTANT]
-> **Prérequis :** Assure-toi d'avoir activé l'offre **Gemini Advanced** (essai gratuit 1 mois) sur [gemini.google.com/advanced](https://gemini.google.com/advanced) et d'être connecté dans Antigravity avec ce même compte Google. Si c'est déjà fait, tu es prêt !
+> **Prérequis :** Assure-toi d'avoir activé l'offre **Google AI Pro** (1 mois offert à 0€) sur [gemini.google/subscriptions](https://gemini.google/subscriptions/) et d'être connecté dans Antigravity avec ce même compte Google. Si c'est déjà fait, tu es prêt !
 
 ---
 
