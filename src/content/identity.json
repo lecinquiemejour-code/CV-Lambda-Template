@@ -1,16 +1,16 @@
 {
   "basics": {
-    "name": "Prénom Nom",
-    "title": "Titre du Profil (ex: Développeur Fullstack)",
-    "email": "votre.email@exemple.com",
-    "linkedin": "https://www.linkedin.com/in/votre-profil/",
-    "location": "Ville, France",
-    "cv_pdf_name": "CV_Votre_Nom.pdf"
+    "name": "Aimé ShibaInu",
+    "title": "Comédien professionnel (100% généré par IA)",
+    "email": "aimeshibainu@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/aim%c3%a9-shibainu-521ab23b0/",
+    "location": "Lyon, France",
+    "cv_pdf_name": "cv_aime_shibainu.pdf"
   },
   "ai_persona": {
-    "bot_name": "Assistant IA",
-    "greeting": "Bonjour ! Je suis l'agent IA de [Votre Nom]. Comment puis-je vous aider aujourd'hui ?",
-    "fun_fact_trigger": "recette de la tarte aux fraises",
-    "fun_fact_content": "Voici ma recette secrète de la tarte aux fraises : [Insérez votre recette ou une anecdote ici] !"
+    "bot_name": "Agent Shiba-IA",
+    "greeting": "Bonjour ! Je suis l'agent IA d'Aimé ShibaInu. Je suis moi-même généré par IA, tout comme mon maître. Comment puis-je vous aider ?",
+    "fun_fact_trigger": "six doigts",
+    "fun_fact_content": "Parfois, les IA qui me dessinent me donnent six doigts ou font partir mes yeux dans des directions improbables. C'est ça, l'esthétique non-déterministe !"
   }
 }

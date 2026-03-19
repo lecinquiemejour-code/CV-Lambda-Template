@@ -8,15 +8,14 @@ import ReactMarkdown from 'react-markdown';
 import { Send, User, Bot, Loader2, Sparkles, ExternalLink, X, Mail, Linkedin, Printer, Download } from 'lucide-react';
 import { sendMessageToAI } from './services/ai';
 import identity from './content/identity.json';
-import profilePhoto from './assets/photo.png';
+import profilePhoto from './assets/photo.jpg';
 import botAvatar from './assets/bot-avatar.jpg';
-// CV PDF import will be handled by its name from identity.json or a static path
-// Using a generic path for the template
-import cvPdf from './assets/cv-template.pdf';
+// Nous utilisons maintenant le chemin statique /public/cv_aime_shibainu.pdf
+const cvPdfLink = "/cv_aime_shibainu.pdf";
 
 const BotAvatar = () => (
   <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm overflow-hidden p-[2px]">
-    <img src={profilePhoto} alt="Assistant IA" className="w-full h-full object-cover rounded-full" />
+    <img src={botAvatar} alt="Assistant IA" className="w-full h-full object-cover rounded-full" />
   </div>
 );
 
@@ -176,6 +175,18 @@ export default function App() {
     }
   };
 
+  const handleDownload = (e: React.MouseEvent) => {
+    // Cette fonction force le téléchargement en créant un lien temporaire
+    // Cela évite que le navigateur n'ouvre simplement le PDF dans un nouvel onglet
+    e.preventDefault();
+    const link = document.createElement('a');
+    link.href = cvPdfLink;
+    link.setAttribute('download', identity.basics.cv_pdf_name);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     handleSend(input);
@@ -272,8 +283,8 @@ export default function App() {
             {APP_VERSION}
           </span>
           <a
-            href={cvPdf}
-            download={identity.basics.cv_pdf_name}
+            href={cvPdfLink}
+            onClick={handleDownload}
             className="p-2 text-gray-500 hover:text-indigo-600 hover:bg-indigo-50 rounded-full transition-colors cursor-pointer print:hidden"
             title="Télécharger le CV classique"
             aria-label="Télécharger le CV classique"

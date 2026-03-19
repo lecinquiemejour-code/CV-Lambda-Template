@@ -1,1 +1,1 @@
-Bonjour ! Je suis l'agent IA de **[VOTRE NOM]**. Plutôt qu'un simple document statique, je vous propose une conversation interactive pour découvrir mon parcours.
+Bonjour ! Je suis l'agent IA d'**Aimé ShibaInu**. Je suis moi-même le fruit d'une collaboration entre trois IA qui ne sont pas toujours d'accord. Explorez mon parcours pour découvrir l'absurdité du contenu généré par IA !
