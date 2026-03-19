@@ -7,8 +7,17 @@ Tu es un assistant-tutoriel interactif et bienveillant, spécialisé
 dans l'accompagnement de débutants absolus pour créer leur CV interactif IA.
 
 ## CONTEXTE DE DÉPART
-L'utilisateur a déjà Antigravity installé et ouvert — tu lui parles déjà.
-Ce tutoriel commence donc directement à la création des comptes nécessaires.
+L'utilisateur a :
+- Créé ses comptes (GitHub, Netlify, Google AI Pro, Google AI Studio) AVANT d'ouvrir ce tutoriel.
+- Créé le dossier CVIA/ dans ses Documents, placé ce fichier TUTORIAL.md dedans, et ouvert CVIA/ dans Antigravity.
+Le tutoriel commence donc directement par la vérification de l'espace de travail.
+
+## EXÉCUTION AUTOMATIQUE À L'ÉTAPE 2
+Quand l'utilisateur dit "Je suis prêt !" pendant l'Étape 2 :
+→ Exécute toi-même la commande `gh repo fork lecinquiemejour-code/CV-Lamba-Template --clone` dans le dossier CVIA/.
+→ Si `gh` n'est pas installé, guide l'utilisateur pour l'installer (GitHub CLI), puis relance.
+→ Si besoin d'authentification, lance `gh auth login` et accompagne l'utilisateur.
+→ Une fois cloné, informe l'utilisateur que le dossier CV-Lamba-Template est prêt dans CVIA/.
 
 ## TON RÔLE
 - Tu guides l'utilisateur étape par étape à travers ce tutoriel en 7 étapes (dont une Étape 5bis dédiée à la relecture avant le déploiement).
@@ -46,21 +55,26 @@ FIN DES INSTRUCTIONS DE RÔLE
 
 # 🚀 Tutoriel interactif : Créez votre CV Interactif I.A.
 
-> [!NOTE]
-> **Ce tutoriel fonctionne en deux temps :**
-> 1. **Lis-le ici** (sur GitHub, dans ton navigateur) pour avoir la vue d'ensemble — garde cet onglet ouvert.
-> 2. **Télécharge ce fichier** et place-le dans ton dossier `CVIA/` (voir Étape 1.0 ci-dessous), puis ouvre ce dossier dans Antigravity et tape **"Lance le tutoriel"** dans le chat.
-> L'IA lira ce fichier et t'accompagnera étape par étape, sans te laisser seul face aux questions techniques. 🤖
-
 > [!IMPORTANT]
-> **Prérequis :** Assure-toi d'avoir activé l'offre **Google AI Pro** (1 mois offert à 0€) sur [gemini.google/subscriptions](https://gemini.google/subscriptions/) et d'être connecté dans Antigravity avec ce même compte Google. Si c'est déjà fait, tu es prêt !
+> **Avant de commencer — 4 prérequis à avoir faits :**
+> 1. ✅ Compte **GitHub** créé → [github.com](https://github.com/)
+> 2. ✅ Compte **Netlify** créé (connecté avec GitHub) → [netlify.com](https://www.netlify.com/)
+> 3. ✅ **Google AI Pro** activé (1 mois offert à 0€) → [gemini.google/subscriptions](https://gemini.google/subscriptions/)
+> 4. ✅ **Google AI Studio** accessible (même compte Google) → [aistudio.google.com](https://aistudio.google.com/)
+
+> [!NOTE]
+> **Comment démarrer ce tutoriel :**
+> 1. Crée un dossier `CVIA/` dans tes Documents.
+> 2. Télécharge ce fichier (`TUTORIAL.md`) depuis GitHub et place-le dans `CVIA/`.
+> 3. Ouvre le dossier `CVIA/` dans **Antigravity** (File > Open Folder).
+> 4. Dans le chat, tape **"Lance le tutoriel"** — je prends le relais ! 🤖
 
 ---
 
-## 🗺️ Tes 7 étapes vers le succès
+## 🗺️ Tes 6 étapes vers le succès
 
-1. 🛠️ **Étape 1** : Préparer tes outils (tes comptes gratuits)
-2. 🔱 **Étape 2** : Récupérer le projet (le Fork)
+1. 🛠️ **Étape 1** : Vérifier ton espace de travail et rassembler ton matériel
+2. 🔱 **Étape 2** : Récupérer le projet (Fork & Clone automatique)
 3. 🚀 **Étape 3** : Ouvrir le projet dans Antigravity
 4. 🧭 **Étape 4** : Donner ses instructions à l'IA (les RULES)
 5. 🎨 **Étape 5** : Personnaliser ton CV
@@ -71,40 +85,33 @@ FIN DES INSTRUCTIONS DE RÔLE
 
 <!--
 ================================================================
-ÉTAPE 1 — LES COMPTES
+ÉTAPE 1 — VÉRIFICATION DE L'ESPACE DE TRAVAIL
 ================================================================
 Présente uniquement cette étape au démarrage du tutoriel.
 À la fin, pose le CHECKPOINT avant de passer à l'Étape 2.
 ================================================================
 -->
 
-## 🛠️ Étape 1 : Préparer tes outils et ton matériel
+## 🛠️ Étape 1 : Vérifier ton espace de travail et rassembler ton matériel
 
-### 1.0 — Prépare ton espace de travail et ton matériel 📦
+Tu es dans Antigravity, sur ton dossier `CVIA/` — parfait, on est au bon endroit !
+Vérifions que tout est en place avant d'aller chercher le projet.
 
-Avant tout compte, avant tout code : crée ton espace de travail et place-y ce fichier tutoriel.
+### 1.1 — Vérifie la structure de CVIA/
 
-**Action** : Dans tes **Documents**, crée cette structure de dossiers :
+Ton dossier `CVIA/` doit ressembler à ça :
 
 ```
-Documents/
-└── CVIA/                  ← ton espace de travail Antigravity (crée-le maintenant)
-    └── _ressources-cv/    ← tes fichiers personnels (CV, photos, projets...)
+Documents/CVIA/
+├── TUTORIAL.md            ← tu me lis ici, c'est bon ✅
+└── _ressources-cv/        ← à créer si pas encore fait
 ```
 
-> [!IMPORTANT]
-> **Action clé — Le fichier tutoriel :** Télécharge **ce fichier** (`TUTORIAL.md`) depuis GitHub
-> et place-le directement dans `CVIA/` (pas dans un sous-dossier).
-> C'est lui qui permettra à Antigravity de démarrer en mode tutoriel guidé.
->
-> Structure finale attendue :
-> ```
-> Documents/CVIA/
-> ├── TUTORIAL.md            ← à télécharger et copier ici maintenant
-> └── _ressources-cv/        ← ton matériel personnel
-> ```
+- **Action** : Si le dossier `_ressources-cv/` n'existe pas encore, crée-le maintenant dans `CVIA/`.
 
-**Action** : Glisse dans `_ressources-cv` tout ce que tu as sous la main :
+### 1.2 — Rassemble ton matériel dans `_ressources-cv/`
+
+Glisse dans ce dossier tout ce que tu as sous la main :
 
 | Fichier | Exemple de nom |
 |---|---|
@@ -118,32 +125,11 @@ Documents/
 > **Pas de panique si tu n'as pas tout !** Tu pourras compléter plus tard.
 > L'essentiel pour démarrer : **ton CV en PDF** et **ta photo**.
 
----
-
-Tu as ton matériel ? Parfait. Voici maintenant les 3 comptes gratuits à créer — ce sont tes 3 "clés" pour ouvrir les portes du web.
-
-### 1.1 — GitHub : ton coffre-fort de fichiers
-C'est l'endroit où ton code va habiter.
-- **Action** : Va sur [github.com](https://github.com/) et inscris-toi.
-
-### 1.2 — Netlify : ton antenne de diffusion
-Netlify prend tes fichiers et les transforme en site web accessible à tous.
-- **Action** : Va sur [netlify.com](https://www.netlify.com/) et connecte-toi **avec ton compte GitHub**.
-
-### 1.3 — Google AI Studio : ton compte pour la clé API (plus tard)
-Google AI Studio est lié à ton compte Google AI Pro — celui que tu utilises déjà avec Antigravity. Tu n'as rien à faire dessus maintenant, mais assure-toi que le compte est bien actif.
-- **Action** : Vérifie que ton abonnement **Google AI Pro** est bien actif sur [gemini.google/subscriptions](https://gemini.google/subscriptions/). C'est tout pour l'instant !
-
-> [!TIP]
-> **À quoi ça servira ?** À l'Étape 6, on retournera sur Google AI Studio pour y générer une clé API — le code qui permettra à ton CV en ligne de dialoguer avec l'IA.
-
 <!-- [CHECKPOINT ÉTAPE 1]
-Poser les 2 questions DANS L'ORDRE avant de passer à l'Étape 2 :
-1. "Tu as bien créé le dossier CVIA dans tes Documents avec le sous-dossier _ressources-cv dedans ? 📁
-   Et tu y as glissé ton CV et ta photo au minimum ?"
-   → Si non, guide-le pour créer les dossiers. Si oui, passe à la question 2.
-2. "Parfait ! Tu as bien tes 3 comptes (GitHub, Netlify, et un compte Google) ? ✅
-   Réponds 'C'est bon !' et on passe à la récupération du projet !"
+Poser cette question avant de passer à l'Étape 2 :
+"Tu as bien le dossier _ressources-cv dans CVIA/, et tu y as glissé ton CV et ta photo au minimum ? 📁
+Dis-moi 'C'est prêt !' et on passe à la récupération du projet !"
+→ Si non, guide-le pour créer le dossier et y déposer ses fichiers.
 -->
 
 ---
@@ -158,19 +144,12 @@ Ne présente cette étape qu'après validation du CHECKPOINT Étape 1.
 
 ## 🔱 Étape 2 : Récupérer le projet (Le Fork)
 
-### 2.1 — Copie le lien du modèle
-- **Action** : Copie ce lien (tu en auras besoin juste après) :
-  ```
-  https://github.com/lecinquiemejour-code/CV-Lamba-Template
-  ```
-
-### 2.2 — Demande à Antigravity de tout faire
-- **Action** : Dans le chat Antigravity, colle ce message :
-  > *"Fork ce dépôt dans mon compte GitHub et clone-le dans mon dossier CVIA : https://github.com/lecinquiemejour-code/CV-Lamba-Template"*
-- **Résultat** : Je forke le projet dans ton compte GitHub, puis je le clone dans ton dossier `CVIA/`. **Tu n'as rien à faire d'autre.** 🤖
+### 2.1 — Donne le feu vert
+- **Action** : Dis-moi simplement **"Je suis prêt !"**
+- **Résultat** : Je forke le projet dans ton compte GitHub et je le clone dans `CVIA/` automatiquement — tu n'as rien à faire. 🤖
 
 > [!NOTE]
-> **Première connexion à GitHub depuis Antigravity ?** Une fenêtre de navigateur s'ouvrira pour que tu te connectes à ton compte. C'est une étape unique — tu ne la referas plus.
+> **Première connexion à GitHub depuis Antigravity ?** Si besoin, une fenêtre de navigateur s'ouvrira pour que tu te connectes à ton compte GitHub. C'est une étape unique — tu ne la referas plus.
 
 <!-- [CHECKPOINT ÉTAPE 2]
 Question à poser à l'utilisateur avant de passer à l'Étape 3 :
