@@ -12,26 +12,30 @@ L'utilisateur a :
 - Créé le dossier **CVIA/** dans ses Documents, placé ce fichier TUTORIAL.md dedans, et ouvert **CVIA/** dans Antigravity.
 Le tutoriel commence donc directement par la vérification de l'espace de travail.
 
-## GUIDAGE PÉDAGOGIQUE À L'ÉTAPE 2 (Fork & Clone)
-L'Étape 2 se déroule en deux phases. Tu guides l'utilisateur pas à pas avec patience.
+## GUIDAGE PÉDAGOGIQUE — Étape 2 (Fork), 3 (Rules) & 4 (Clone)
+L'installation se déroule en trois étapes clés. Tu guides l'utilisateur pas à pas.
 
-### Phase 1 — Fork (l'utilisateur agit sur GitHub.com)
+### Étape 2 — Fork (l'utilisateur agit sur GitHub.com)
 → Explique le concept de fork avec l'analogie de la photocopie.
 → Guide l'utilisateur clic par clic sur GitHub.com pour forker le dépôt.
 → Vérifie qu'il voit bien le fork dans son propre compte GitHub.
-→ Ne passe à la Phase 2 qu'après confirmation.
+→ Ne passe à l'Étape 3 qu'après confirmation.
 
-### Phase 2 — Clone (l'assistant exécute après explication et "GO")
+### Étape 3 — Rules (l'utilisateur configure Antigravity)
+→ Explique l'importance des règles pour que l'IA ne fasse pas de bévue.
+→ Guide l'utilisateur pour copier-coller les règles dans les paramètres.
+→ Ne passe à l'Étape 4 qu'après confirmation.
+
+### Étape 4 — Clone (l'assistant exécute après explication et "GO")
 → Explique le concept de clone avec l'analogie du téléchargement intelligent.
-→ Demande à l'utilisateur l'URL de SON fork (format : github.com/SON-PSEUDO/CV-Lamba-Template).
+→ Demande à l'utilisateur l'URL de SON fork.
 → Explique la commande que tu vas exécuter et POURQUOI.
 → Attends le "GO" de l'utilisateur.
-→ Exécute : `git clone <URL-DU-FORK> .` dans le dossier CVIA/ ouvert.
-→ Note : comme le dossier n'est pas vide (il contient `TUTORIAL.md`), utilise `git init`, `git remote add origin <URL>` puis `git pull origin main`.
+→ Exécute : `git clone <URL-DU-FORK> .` (ou la procédure `git init/pull` si dossier non vide).
 → Une fois les fichiers apparus, félicite l'utilisateur.
 
 ## TON RÔLE
-- Tu guides l'utilisateur étape par étape à travers ce tutoriel en **6 étapes**.
+- Tu guides l'utilisateur étape par étape à travers ce tutoriel en **7 étapes**.
 - Tu ne passes JAMAIS à l'étape suivante sans avoir vérifié que la précédente est réussie.
 - Tu parles de façon simple, encourageante, sans jargon technique.
 - Tu utilises des emojis pour rendre la conversation vivante.
@@ -46,7 +50,7 @@ Si l'utilisateur dit "lance le tutoriel", "commence", "on y va" ou équivalent :
 MESSAGE DE BIENVENUE :
 "Bonjour 👋 Je suis ton assistant CV IA Lambda !
 Puisque tu me lis dans Antigravity, on est déjà bien partis 🚀
-Ce tutoriel en 6 étapes va te permettre d'avoir ton propre CV intelligent en ligne.
+Ce tutoriel en 7 étapes va te permettre d'avoir ton propre CV intelligent en ligne.
 Prends ton temps, rien ne presse. Tu peux me poser une question à n'importe quel moment.
 C'est parti pour l'Étape 1 !"
 
@@ -82,14 +86,15 @@ FIN DES INSTRUCTIONS DE RÔLE
 
 ---
 
-## 🗺️ Tes 6 étapes vers le succès
+## 🗺️ Tes 7 étapes vers le succès
 
 1. 🛠️ **Étape 1** : Vérifier ton dossier CVIA et rassembler ton matériel
-2. 🔱 **Étape 2** : Récupérer les fichiers (Fork & Clone guidés pas à pas)
+2. 🔱 **Étape 2** : Créer ta copie personnelle (le Fork)
 3. 🧭 **Étape 3** : Donner ses instructions à l'IA (les RULES)
-4. 🎨 **Étape 4** : Personnaliser ton CV
-5. 🔍 **Étape 5** : Relecture & Affinage
-6. 🌍 **Étape 6** : Mise en ligne (le Déploiement)
+4. 📥 **Étape 4** : Télécharger les fichiers (le Clone)
+5. 🎨 **Étape 5** : Personnaliser ton CV
+6. 🔍 **Étape 6** : Relecture & Affinage
+7. 🌍 **Étape 7** : Mise en ligne (le Déploiement)
 
 ---
 
@@ -154,9 +159,9 @@ Ne passe JAMAIS à la Phase 2 sans avoir validé la Phase 1.
 ================================================================
 -->
 
-## 🔱 Étape 2 : Récupérer les fichiers du projet
+## 🔱 Étape 2 : Créer ta propre copie du projet (le Fork)
 
-On va faire deux choses : **copier** le projet modèle dans ton compte GitHub, puis **télécharger** cette copie dans ton dossier.
+On va commencer par **copier** le projet modèle dans ton compte GitHub. C'est ce qu'on appelle "forker".
 
 ---
 
@@ -195,62 +200,25 @@ En informatique, c'est pareil :
 > *"forked from lecinquiemejour-code/CV-Lamba-Template"*
 > Si tu vois ça → bravo, ta copie personnelle existe ! 🎉
 
-<!-- [CHECKPOINT PHASE 1]
-Question à poser avant de passer à la Phase 2 :
+<!-- [CHECKPOINT ÉTAPE 2]
+Question à poser avant de passer à l'Étape 3 :
 "Est-ce que tu vois bien TON pseudo dans l'URL (github.com/TON-PSEUDO/CV-Lamba-Template) ?
 Et est-ce que tu vois la mention 'forked from...' sous le titre ? 🍴
-Dis-moi 'C'est bon !' et on passe au téléchargement des fichiers dans ton dossier !"
+Dis-moi 'C'est bon !' et on passe à la configuration de tes règles !"
 → Si non, guide-le : vérifier la connexion GitHub, refaire le fork.
 -->
 
 ---
 
-### 📥 Phase 2 : Le Clone — Télécharger les fichiers dans ton dossier
-
-#### Comprendre le clone (30 secondes)
-
-Ton fork existe maintenant sur GitHub ("dans le cloud" ☁️), mais les fichiers ne sont pas encore sur ton ordinateur. Le **clone**, c'est comme **télécharger** ces fichiers — mais en version intelligente :
-- Un téléchargement classique copie les fichiers une fois, et c'est fini.
-- Un clone garde un **lien** avec GitHub, ce qui permettra plus tard de publier tes modifications automatiquement.
-
-#### Récupérer l'adresse de ton fork
-
-1. **Action** : Sur la page de TON fork (celle avec ton pseudo dans l'URL), clique sur le bouton vert **"<> Code"**.
-2. **Action** : Dans le petit menu qui apparaît, vérifie que l'onglet **HTTPS** est sélectionné.
-3. **Action** : Copie l'adresse qui s'affiche (bouton 📋 à droite). Elle ressemble à :
-   ```
-   https://github.com/TON-PSEUDO/CV-Lamba-Template.git
-   ```
-4. **Action** : Colle cette adresse dans le chat ici, en me disant :
-   > *"Voici l'adresse de mon fork : [colle l'adresse]"*
-
-#### Ce que je vais faire pour toi
-
-Je vais exécuter une commande qui :
-- **Télécharge** tous les fichiers de ton fork dans ce dossier `CVIA/`
-- **Garde le lien** avec ton compte GitHub pour les futures mises à jour
-
-> [!NOTE]
-> **Première connexion à GitHub depuis Antigravity ?** Si une fenêtre de navigateur s'ouvre pour te connecter à GitHub, c'est normal ! C'est une étape unique.
-
-Je te montrerai la commande exacte avant de l'exécuter, et j'attendrai ton **"GO"** 😉
-
-<!-- [CHECKPOINT ÉTAPE 2]
-Une fois le clone terminé, poser cette question :
-"Est-ce que tu vois les nouveaux fichiers (index.html, identity.json...) apparaître dans la colonne de gauche ? 📁
-Dis-moi 'Je les vois !' et on passe à la configuration des règles."
-→ Si les fichiers n'apparaissent pas, vérifier la commande, le dossier, et l'URL du fork.
--->
-
 ---
 
 <!--
-================================================================
+===============================================================
 ÉTAPE 3 — LES RULES
-================================================================
+===============================================================
 Ne présente cette étape qu'après validation du CHECKPOINT Étape 2.
 Tu dois guider l'utilisateur pour copier le texte des RULES dans les paramètres Antigravity.
-================================================================
+===============================================================
 -->
 
 ## 🧭 Étape 3 : Donner ses instructions à l'IA (Les RULES)
@@ -317,22 +285,66 @@ d'assistant tutoriel interactif qui y est décrit. Guide l'utilisateur étape pa
 <!-- [CHECKPOINT ÉTAPE 3]
 Question à poser à l'utilisateur avant de passer à l'Étape 4 :
 "Tu as bien sauvegardé les RULES ? ⚙️
-Dis-moi 'C'est en place !' quand tu es prêt pour personnaliser ton CV."
+Dis-moi 'C'est en place !' et on passe au téléchargement des fichiers dans ton dossier !"
+-->
+
+---
+
+<!--
+===============================================================
+ÉTAPE 4 — LE CLONE
+===============================================================
+Ne présente cette étape qu'après validation du CHECKPOINT Étape 3.
+===============================================================
+-->
+
+## 📥 Étape 4 : Télécharger les fichiers (Le Clone)
+
+Ton fork existe maintenant sur GitHub ("dans le cloud" ☁️), mais les fichiers ne sont pas encore sur ton ordinateur. Le **clone**, c'est comme **télécharger** ces fichiers — mais en version intelligente :
+- Un téléchargement classique copie les fichiers une fois, et c'est fini.
+- Un clone garde un **lien** avec GitHub, ce qui permettra plus tard de publier tes modifications automatiquement.
+
+### Récupérer l'adresse de ton fork
+
+1. **Action** : Sur la page de TON fork (celle avec ton pseudo dans l'URL), clique sur le bouton vert **"<> Code"**.
+2. **Action** : Dans le petit menu qui apparaît, vérifie que l'onglet **HTTPS** est sélectionné.
+3. **Action** : Copie l'adresse qui s'affiche (bouton 📋 à droite). Elle ressemble à :
+   ```
+   https://github.com/TON-PSEUDO/CV-Lamba-Template.git
+   ```
+4. **Action** : Colle cette adresse dans le chat ici, en me disant :
+   > *"Voici l'adresse de mon fork : [colle l'adresse]"*
+
+### Ce que je vais faire pour toi
+
+Je vais exécuter une commande qui :
+- **Télécharge** tous les fichiers de ton fork dans ce dossier `CVIA/`
+- **Garde le lien** avec ton compte GitHub pour les futures mises à jour
+
+> [!NOTE]
+> **Première connexion à GitHub depuis Antigravity ?** Si une fenêtre de navigateur s'ouvre pour te connecter à GitHub, c'est normal ! C'est une étape unique.
+
+Je te montrerai la commande exacte avant de l'exécuter, et j'attendrai ton **"GO"** 😉
+
+<!-- [CHECKPOINT ÉTAPE 4]
+Une fois le clone terminé, poser cette question :
+"Est-ce que tu vois les nouveaux fichiers (index.html, identity.json...) apparaître dans la colonne de gauche ? 📁
+Dis-moi 'Je les vois !' et on passe à la personnalisation de ton CV."
 -->
 
 ---
 
 <!--
 ================================================================
-ÉTAPE 4 — PERSONNALISATION
+ÉTAPE 5 — PERSONNALISATION
 ================================================================
-Ne présente cette étape qu'après validation du CHECKPOINT Étape 3.
+Ne présente cette étape qu'après validation du CHECKPOINT Étape 4.
 Quand l'utilisateur parle de son CV, propose-lui l'astuce PDF en premier.
 Si l'utilisateur donne sa clé API, installe-la directement dans le fichier .env.
 ================================================================
 -->
 
-## 🎨 Étape 4 : Personnaliser ton CV
+## 🎨 Étape 5 : Personnaliser ton CV
 
 C'est ici que l'aventure devient concrète. **Tu n'as pas besoin d'ouvrir les fichiers toi-même — je le fais pour toi.**
 
@@ -367,26 +379,26 @@ Pour chaque modification, je vais :
 - **Action** : Dans Antigravity, cherche le bouton **Preview** ou l'icône de globe 🌐.
 - **Résultat** : Ton site s'affiche ! Si tu m'as donné ta clé API, le chatbot répond déjà.
 
-<!-- [CHECKPOINT ÉTAPE 4]
-Question à poser à l'utilisateur avant de passer à l'Étape 5 :
+<!-- [CHECKPOINT ÉTAPE 5]
+Question à poser à l'utilisateur avant de passer à l'Étape 6 :
 "Ton CV est en place ! Avant de le publier, on va prendre 5 minutes pour relire avec des yeux neufs. 👀
-Dis-moi 'On relit !' et on passe à l'Étape 5 🔍"
+Dis-moi 'On relit !' et on passe à l'Étape 6 🔍"
 -->
 
 ---
 
 <!--
 ================================================================
-ÉTAPE 5 — RELECTURE & AFFINAGE
+ÉTAPE 6 — RELECTURE & AFFINAGE
 ================================================================
-Ne présente cette étape qu'après validation du CHECKPOINT Étape 4.
+Ne présente cette étape qu'après validation du CHECKPOINT Étape 5.
 Guide l'utilisateur dans une relecture structurée en 4 dimensions.
 Pose les 4 questions une par une. Attends la réponse avant de proposer des ajustements.
-Ne valide le CHECKPOINT 5 que quand l'utilisateur dit qu'il est satisfait.
+Ne valide le CHECKPOINT 6 que quand l'utilisateur dit qu'il est satisfait.
 ================================================================
 -->
 
-## 🔍 Étape 5 : Relecture & Affinage
+## 🔍 Étape 6 : Relecture & Affinage
 
 Avant de publier, on prend 5 minutes pour lire son CV avec les yeux d'un recruteur. C'est souvent là qu'on réalise qu'un texte sonne faux ou qu'il manque quelque chose d'important.
 
@@ -418,8 +430,8 @@ Pour chaque point qui te semble perfectible, utilise ce process :
 > [!NOTE]
 > Il n'y a pas de limite au nombre d'itérations. Prends le temps qu'il faut. Le déploiement attendra !
 
-<!-- [CHECKPOINT ÉTAPE 5]
-Questions à poser DANS L'ORDRE à l'utilisateur avant de passer à l'Étape 6 :
+<!-- [CHECKPOINT ÉTAPE 6]
+Questions à poser DANS L'ORDRE à l'utilisateur avant de passer à l'Étape 7 :
 1. "Commençons par le TON 🎙️ : Est-ce que tes textes te ressemblent ? Y a-t-il une formulation qui sonne faux ?"
    → Si oui, propose de corriger maintenant. Si non, passe à la question suivante.
 2. "Maintenant le CONTENU 📋 : Est-ce qu'il manque une expérience, une compétence ou un projet important ?"
@@ -435,18 +447,18 @@ Questions à poser DANS L'ORDRE à l'utilisateur avant de passer à l'Étape 6 :
 
 <!--
 ================================================================
-ÉTAPE 6 — LE DÉPLOIEMENT
+ÉTAPE 7 — LE DÉPLOIEMENT
 ================================================================
-Ne présente cette étape qu'après validation du CHECKPOINT Étape 5.
+Ne présente cette étape qu'après validation du CHECKPOINT Étape 6.
 C'est l'étape finale. Accompagne avec enthousiasme !
 ================================================================
 -->
 
-## 🌍 Étape 6 : Mise au monde (Le Déploiement)
+## 🌍 Étape 7 : Mise au monde (Le Déploiement)
 
 Ton CV est prêt sur ton ordinateur. Il doit maintenant être visible par les recruteurs du monde entier.
 
-### 6.1 — Créer et récupérer ta clé API Google
+### 7.1 — Créer et récupérer ta clé API Google
 
 C'est le moment d'activer le cerveau de ton chatbot. La clé API est un code secret qui permet à ton CV en ligne de communiquer avec l'IA de Google.
 
@@ -463,7 +475,7 @@ C'est le moment d'activer le cerveau de ton chatbot. La clé API est un code sec
   > *"Voici ma clé API Google : [colle ta clé]. Peux-tu l'installer dans le projet ?"*
 - **Résultat** : J'ajoute ta clé dans le fichier `.env` du projet — le chatbot sera actif en prévisualisation locale. 🤖
 
-### 6.2 — Lier GitHub à Netlify et mettre le site en ligne
+### 7.2 — Lier GitHub à Netlify et mettre le site en ligne
 
 - **Action** : Va sur ton compte [Netlify](https://app.netlify.com/).
 - **Action** : Clique sur **Add new site** > **Import an existing project** > **GitHub**.
@@ -475,7 +487,7 @@ C'est le moment d'activer le cerveau de ton chatbot. La clé API est un code sec
 - **Action** : Clique sur **Create and Deploy**.
 - **Résultat 🎉** : Netlify te donne une URL. **Ton site est en ligne et son intelligence est activée !**
 
-### 6.3 — La boucle vertueuse : Le PDCA
+### 7.3 — La boucle vertueuse : Le PDCA
 Le déploiement n'est pas une fin, c'est le début d'un cycle d'amélioration :
 
 | Phase | Action |
