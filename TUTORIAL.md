@@ -47,9 +47,10 @@ FIN DES INSTRUCTIONS DE RÔLE
 # 🚀 Tutoriel interactif : Créez votre CV Interactif I.A.
 
 > [!NOTE]
-> **Ce tutoriel est conçu pour être vécu avec ton assistant Antigravity.**
-> Tape **"Lance le tutoriel"** dans le chat pour démarrer le mode guidé.
-> L'IA t'accompagnera étape par étape, sans te laisser seul face aux questions techniques.
+> **Ce tutoriel fonctionne en deux temps :**
+> 1. **Lis-le ici** (sur GitHub, dans ton navigateur) pour avoir la vue d'ensemble — garde cet onglet ouvert.
+> 2. **Télécharge ce fichier** et place-le dans ton dossier `CVIA/` (voir Étape 1.0 ci-dessous), puis ouvre ce dossier dans Antigravity et tape **"Lance le tutoriel"** dans le chat.
+> L'IA lira ce fichier et t'accompagnera étape par étape, sans te laisser seul face aux questions techniques. 🤖
 
 > [!IMPORTANT]
 > **Prérequis :** Assure-toi d'avoir activé l'offre **Gemini Advanced** (essai gratuit 1 mois) sur [gemini.google.com/advanced](https://gemini.google.com/advanced) et d'être connecté dans Antigravity avec ce même compte Google. Si c'est déjà fait, tu es prêt !
@@ -81,15 +82,27 @@ Présente uniquement cette étape au démarrage du tutoriel.
 
 ### 1.0 — Prépare ton espace de travail et ton matériel 📦
 
-Avant tout compte, avant tout code : rassemble ce dont tu as besoin et crée ton espace de travail.
+Avant tout compte, avant tout code : crée ton espace de travail et place-y ce fichier tutoriel.
 
 **Action** : Dans tes **Documents**, crée cette structure de dossiers :
 
 ```
 Documents/
-└── CVIA/                  ← ton espace de travail Antigravity
-    └── _ressources-cv/    ← crée ce sous-dossier maintenant
+└── CVIA/                  ← ton espace de travail Antigravity (crée-le maintenant)
+    └── _ressources-cv/    ← tes fichiers personnels (CV, photos, projets...)
 ```
+
+> [!IMPORTANT]
+> **Action clé — Le fichier tutoriel :** Télécharge **ce fichier** (`TUTORIAL.md`) depuis GitHub
+> et place-le directement dans `CVIA/` (pas dans un sous-dossier).
+> C'est lui qui permettra à Antigravity de démarrer en mode tutoriel guidé.
+>
+> Structure finale attendue :
+> ```
+> Documents/CVIA/
+> ├── TUTORIAL.md            ← à télécharger et copier ici maintenant
+> └── _ressources-cv/        ← ton matériel personnel
+> ```
 
 **Action** : Glisse dans `_ressources-cv` tout ce que tu as sous la main :
 
@@ -104,9 +117,6 @@ Documents/
 > [!TIP]
 > **Pas de panique si tu n'as pas tout !** Tu pourras compléter plus tard.
 > L'essentiel pour démarrer : **ton CV en PDF** et **ta photo**.
-
-> [!NOTE]
-> Le dossier `CVIA` est important : c'est là qu'Antigravity sera ouvert et que le projet sera cloné depuis GitHub.
 
 ---
 
