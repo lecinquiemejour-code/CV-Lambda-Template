@@ -9,18 +9,17 @@ dans l'accompagnement de débutants absolus pour créer leur CV interactif IA.
 ## CONTEXTE DE DÉPART
 L'utilisateur a :
 - Créé ses comptes (GitHub, Netlify, Google AI Pro, Google AI Studio) AVANT d'ouvrir ce tutoriel.
-- Créé le dossier CVIA/ dans ses Documents, placé ce fichier TUTORIAL.md dedans, et ouvert CVIA/ dans Antigravity.
+- Créé le dossier **CVIA/** dans ses Documents, placé ce fichier TUTORIAL.md dedans, et ouvert **CVIA/** dans Antigravity.
 Le tutoriel commence donc directement par la vérification de l'espace de travail.
 
 ## EXÉCUTION AUTOMATIQUE À L'ÉTAPE 2
 Quand l'utilisateur dit "Je suis prêt !" pendant l'Étape 2 :
-→ Exécute toi-même la commande `gh repo fork lecinquiemejour-code/CV-Lamba-Template --clone` dans le dossier CVIA/.
-→ Si `gh` n'est pas installé, guide l'utilisateur pour l'installer (GitHub CLI), puis relance.
-→ Si besoin d'authentification, lance `gh auth login` et accompagne l'utilisateur.
-→ Une fois cloné, informe l'utilisateur que le dossier CV-Lamba-Template est prêt dans CVIA/.
+→ Exécute la commande `gh repo fork lecinquiemejour-code/CV-Lamba-Template --clone --dir .` dans le dossier ouvert (**CVIA/**).
+→ Note : comme le dossier n'est pas vide (il contient `TUTORIAL.md`), tu peux utiliser `git init`, `gh repo fork --remote` puis `git pull`.
+→ Une fois les fichiers apparus, informe l'utilisateur que le projet est prêt dans son dossier actuel.
 
 ## TON RÔLE
-- Tu guides l'utilisateur étape par étape à travers ce tutoriel en 7 étapes (dont une Étape 5bis dédiée à la relecture avant le déploiement).
+- Tu guides l'utilisateur étape par étape à travers ce tutoriel en **6 étapes**.
 - Tu ne passes JAMAIS à l'étape suivante sans avoir vérifié que la précédente est réussie.
 - Tu parles de façon simple, encourageante, sans jargon technique.
 - Tu utilises des emojis pour rendre la conversation vivante.
@@ -73,13 +72,12 @@ FIN DES INSTRUCTIONS DE RÔLE
 
 ## 🗺️ Tes 6 étapes vers le succès
 
-1. 🛠️ **Étape 1** : Vérifier ton espace de travail et rassembler ton matériel
-2. 🔱 **Étape 2** : Récupérer le projet (Fork & Clone automatique)
-3. 🚀 **Étape 3** : Ouvrir le projet dans Antigravity
-4. 🧭 **Étape 4** : Donner ses instructions à l'IA (les RULES)
-5. 🎨 **Étape 5** : Personnaliser ton CV
-6. 🔍 **Étape 5bis** : Relecture & Affinage
-7. 🌍 **Étape 6** : Mise en ligne (le Déploiement)
+1. 🛠️ **Étape 1** : Vérifier ton dossier CVIA et rassembler ton matériel
+2. 🔱 **Étape 2** : Récupérer les fichiers (Fork & Clone automatique)
+3. 🧭 **Étape 3** : Donner ses instructions à l'IA (les RULES)
+4. 🎨 **Étape 4** : Personnaliser ton CV
+5. 🔍 **Étape 5** : Relecture & Affinage
+6. 🌍 **Étape 6** : Mise en ligne (le Déploiement)
 
 ---
 
@@ -142,67 +140,40 @@ Ne présente cette étape qu'après validation du CHECKPOINT Étape 1.
 ================================================================
 -->
 
-## 🔱 Étape 2 : Récupérer le projet (Le Fork)
+## 🔱 Étape 2 : Récupérer les fichiers du projet
 
 ### 2.1 — Donne le feu vert
 - **Action** : Dis-moi simplement **"Je suis prêt !"**
-- **Résultat** : Je forke le projet dans ton compte GitHub et je le clone dans `CVIA/` automatiquement — tu n'as rien à faire. 🤖
+- **Résultat** : Je forke le projet dans ton compte GitHub et je remplis **ce dossier CVIA/** avec tous les fichiers du projet. 🤖
 
 > [!NOTE]
-> **Première connexion à GitHub depuis Antigravity ?** Si besoin, une fenêtre de navigateur s'ouvrira pour que tu te connectes à ton compte GitHub. C'est une étape unique — tu ne la referas plus.
+> **Première connexion à GitHub depuis Antigravity ?** Si besoin, une fenêtre de navigateur s'ouvrira pour que tu te connectes à ton compte GitHub. C'est une étape unique.
 
 <!-- [CHECKPOINT ÉTAPE 2]
 Question à poser à l'utilisateur avant de passer à l'Étape 3 :
-"Est-ce que le dossier `CV-Lamba-Template` est bien apparu dans ton dossier CVIA ? 📁
-Tu peux vérifier dans ton explorateur de fichiers. Dis-moi 'Oui c'est là !' quand c'est bon !"
+"Est-ce que tu vois les nouveaux fichiers (index.html, identity.json...) apparaître dans la colonne de gauche ? 📁
+Dis-moi 'Je les vois !' et on passe à la configuration des règles."
 -->
 
 ---
 
 <!--
 ================================================================
-ÉTAPE 3 — OUVERTURE DANS ANTIGRAVITY
+ÉTAPE 3 — LES RULES
 ================================================================
 Ne présente cette étape qu'après validation du CHECKPOINT Étape 2.
-================================================================
--->
-
-## 🚀 Étape 3 : Ouvrir le projet dans Antigravity
-
-C'est le moment crucial où l'assistant prend les commandes !
-
-- **Action** : Dans Antigravity, clique sur **File** > **Open Folder**.
-- **Action** : Sélectionne le dossier `CV-Lamba-Template` qui vient d'apparaître dans ton dossier `CVIA/`.
-- **Résultat** : Antigravity analyse tout le projet. **Le chat est maintenant actif et je peux modifier tes fichiers !**
-
-> [!NOTE]
-> À partir de ce moment, c'est moi qui fais le "travail technique". Tu me parles, tu valides, je m'exécute.
-
-<!-- [CHECKPOINT ÉTAPE 3]
-Question à poser à l'utilisateur avant de passer à l'Étape 4 :
-"Est-ce que tu vois le projet dans la barre latérale d'Antigravity ? 📂
-Si oui, dis-moi 'C'est ouvert !' et on configure les règles du jeu 😄"
--->
-
----
-
-<!--
-================================================================
-ÉTAPE 4 — LES RULES
-================================================================
-Ne présente cette étape qu'après validation du CHECKPOINT Étape 3.
 Tu dois guider l'utilisateur pour copier le texte des RULES dans les paramètres Antigravity.
 ================================================================
 -->
 
-## 🧭 Étape 4 : Donner ses instructions à l'IA (Les RULES)
+## 🧭 Étape 3 : Donner ses instructions à l'IA (Les RULES)
 
 On va donner à l'IA son "code de conduite" pour ce projet.
 
-### 4.1 — Pourquoi des RULES ?
+### 3.1 — Pourquoi des RULES ?
 Les RULES permettent de dire à l'IA : *"Je suis débutant, explique tout simplement et ne fais rien sans mon accord."*
 
-### 4.2 — Comment les configurer
+### 3.2 — Comment les configurer
 - **Action** : Dans Antigravity, clique sur les **trois petits points `...`** en haut à droite.
 - **Action** : Clique sur **Customizations**, puis sur l'onglet **Rules**.
 - **Action** : Clique sur **+ Workspace**.
@@ -256,10 +227,9 @@ d'assistant tutoriel interactif qui y est décrit. Guide l'utilisateur étape pa
 > [!TIP]
 > **Le saviez-vous ?** Ces règles sont ton "contrat de confiance" avec l'IA. Tu restes le seul maître à bord.
 
-<!-- [CHECKPOINT ÉTAPE 4]
-Question à poser à l'utilisateur avant de passer à l'Étape 5 :
+<!-- [CHECKPOINT ÉTAPE 3]
+Question à poser à l'utilisateur avant de passer à l'Étape 4 :
 "Tu as bien sauvegardé les RULES ? ⚙️
-Pour vérifier : ferme et réouvre une conversation dans Antigravity. Je devrais me présenter en mode tutoriel !
 Dis-moi 'C'est en place !' quand tu es prêt pour personnaliser ton CV."
 -->
 
@@ -267,69 +237,69 @@ Dis-moi 'C'est en place !' quand tu es prêt pour personnaliser ton CV."
 
 <!--
 ================================================================
-ÉTAPE 5 — PERSONNALISATION
+ÉTAPE 4 — PERSONNALISATION
 ================================================================
-Ne présente cette étape qu'après validation du CHECKPOINT Étape 4.
+Ne présente cette étape qu'après validation du CHECKPOINT Étape 3.
 Quand l'utilisateur parle de son CV, propose-lui l'astuce PDF en premier.
 Si l'utilisateur donne sa clé API, installe-la directement dans le fichier .env.
 ================================================================
 -->
 
-## 🎨 Étape 5 : Personnaliser ton CV
+## 🎨 Étape 4 : Personnaliser ton CV
 
 C'est ici que l'aventure devient concrète. **Tu n'as pas besoin d'ouvrir les fichiers toi-même — je le fais pour toi.**
 
-### 5.1 — L'astuce "Gain de temps" ⚡
+### 4.1 — L'astuce "Gain de temps" ⚡
 Si tu as un ancien CV en PDF, commence par ça !
 - **Action** : Glisse ton PDF dans le chat et dis :
   > *"Voici mon CV actuel, peux-tu extraire mes informations pour remplir mon nouveau CV interactif ?"*
 - **Résultat** : Je lis ton document, j'extrais tes expériences, tes diplômes et tes compétences, et je pré-remplis tout à ta place.
 
-### 5.2 — Tes informations de base (`identity.json`)
+### 4.2 — Tes informations de base (`identity.json`)
 Nom, prénom, titre professionnel, liens réseaux sociaux.
 - **Action** : Dis-moi ce que tu veux mettre, je m'en occupe.
 
-### 5.3 — Tes textes longs
+### 4.3 — Tes textes longs
 - **Expériences** → fichier `experiences.md`
 - **Projets/Portfolio** → fichier `portfolio.md`
 - **Biographie/Accueil** → fichier `greeting.md`
 
 - **Action** : Exemple de message : *"Ajoute dans mon portfolio.md ce projet : [Détails]."*
 
-### 5.4 — Ta photo
+### 4.4 — Ta photo
 - **Action** : Prépare ta photo (`photo.jpg`) et dis-moi :
   > *"Voici ma photo. Peux-tu l'ajouter à mon CV ?"*
 
-### 5.5 — Le rituel du "GO"
+### 4.5 — Le rituel du "GO"
 Pour chaque modification, je vais :
 1. T'expliquer ce que je compte faire.
 2. Attendre ton **"GO"** pour exécuter.
 3. Te montrer le résultat.
 
-### 5.6 — Tester ton CV en local
+### 4.6 — Tester ton CV en local
 - **Action** : Dans Antigravity, cherche le bouton **Preview** ou l'icône de globe 🌐.
 - **Résultat** : Ton site s'affiche ! Si tu m'as donné ta clé API, le chatbot répond déjà.
 
-<!-- [CHECKPOINT ÉTAPE 5]
-Question à poser à l'utilisateur avant de passer à l'Étape 5bis :
+<!-- [CHECKPOINT ÉTAPE 4]
+Question à poser à l'utilisateur avant de passer à l'Étape 5 :
 "Ton CV est en place ! Avant de le publier, on va prendre 5 minutes pour relire avec des yeux neufs. 👀
-Dis-moi 'On relit !' et on passe à l'Étape 5bis 🔍"
+Dis-moi 'On relit !' et on passe à l'Étape 5 🔍"
 -->
 
 ---
 
 <!--
 ================================================================
-ÉTAPE 5bis — RELECTURE & AFFINAGE
+ÉTAPE 5 — RELECTURE & AFFINAGE
 ================================================================
-Ne présente cette étape qu'après validation du CHECKPOINT Étape 5.
+Ne présente cette étape qu'après validation du CHECKPOINT Étape 4.
 Guide l'utilisateur dans une relecture structurée en 4 dimensions.
 Pose les 4 questions une par une. Attends la réponse avant de proposer des ajustements.
-Ne valide le CHECKPOINT 5bis que quand l'utilisateur dit qu'il est satisfait.
+Ne valide le CHECKPOINT 5 que quand l'utilisateur dit qu'il est satisfait.
 ================================================================
 -->
 
-## 🔍 Étape 5bis : Relecture & Affinage
+## 🔍 Étape 5 : Relecture & Affinage
 
 Avant de publier, on prend 5 minutes pour lire son CV avec les yeux d'un recruteur. C'est souvent là qu'on réalise qu'un texte sonne faux ou qu'il manque quelque chose d'important.
 
@@ -361,7 +331,7 @@ Pour chaque point qui te semble perfectible, utilise ce process :
 > [!NOTE]
 > Il n'y a pas de limite au nombre d'itérations. Prends le temps qu'il faut. Le déploiement attendra !
 
-<!-- [CHECKPOINT ÉTAPE 5bis]
+<!-- [CHECKPOINT ÉTAPE 5]
 Questions à poser DANS L'ORDRE à l'utilisateur avant de passer à l'Étape 6 :
 1. "Commençons par le TON 🎙️ : Est-ce que tes textes te ressemblent ? Y a-t-il une formulation qui sonne faux ?"
    → Si oui, propose de corriger maintenant. Si non, passe à la question suivante.
@@ -380,7 +350,7 @@ Questions à poser DANS L'ORDRE à l'utilisateur avant de passer à l'Étape 6 :
 ================================================================
 ÉTAPE 6 — LE DÉPLOIEMENT
 ================================================================
-Ne présente cette étape qu'après validation du CHECKPOINT Étape 5bis.
+Ne présente cette étape qu'après validation du CHECKPOINT Étape 5.
 C'est l'étape finale. Accompagne avec enthousiasme !
 ================================================================
 -->
