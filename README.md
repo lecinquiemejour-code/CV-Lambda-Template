@@ -1,56 +1,39 @@
-# CV Interactif IA - Guide de Maintenance
+# 🚀 CV Interactif IA — Template
 
-Ce projet est un CV interactif propulsé par l'IA (Google Gemini) et hébergé sur Netlify.
+Crée ton propre CV intelligent en ligne, propulsé par l'IA Google Gemini.
 
-## 🔑 Gestion de la clé API Gemini
+👀 **Exemple** : [cv-jean-noel.netlify.app](https://cv-jean-noel.netlify.app/)
 
-La sécurité de ton application repose sur le fait que la clé API n'est jamais exposée dans le code source (côté client). Elle est gérée exclusivement côté serveur via une **Netlify Function**.
+## 🎯 Double objectif pédagogique
 
-### Comment changer la clé API sur Netlify ?
+1. 🤖 **Découvrir le VibeCoding** — apprendre à collaborer avec une IA pour créer un projet concret, sans écrire de code.
+2. 🎯 **Créer son propre CV Interactif IA** — un assistant intelligent, personnalisé et déployé en ligne, prêt à impressionner les recruteurs.
 
-Si tu souhaites mettre à jour ta clé ou en utiliser une nouvelle :
+## 🛠️ Stack technique
 
-1.  **Générer une nouvelle clé** :
-    *   Rends-toi sur [Google AI Studio (API Keys)](https://aistudio.google.com/app/apikey).
-    *   Crée une nouvelle clé API pour le projet.
+| Couche | Technologies |
+|---|---|
+| **Frontend** | React · Vite · TailwindCSS |
+| **Backend** | Netlify Functions · Express |
+| **IA** | Google Gemini API |
+| **Hébergement** | Netlify |
+| **Outils** | Git · Node.js · GitHub CLI |
 
-2.  **Mettre à jour Netlify** :
-    *   Connecte-toi à ton dashboard [Netlify](https://app.netlify.com/).
-    *   Sélectionne ton projet : `cv-jean-noel`.
-    *   Va dans l'onglet **Site configuration** (menu de gauche).
-    *   Clique sur **Environment variables**.
-    *   Trouve la variable nommée `API_KEY`.
-    *   Clique sur les trois petits points `...` à droite, puis sur **Edit**.
-    *   Colle ta nouvelle clé dans le champ "Value".
-    *   Clique sur **Save**.
+## 🏁 Comment commencer
 
-3.  **Redéployer pour appliquer** :
-    *   Le changement de variable d'environnement nécessite parfois un nouveau build pour être pris en compte par les fonctions.
-    *   Va dans l'onglet **Deploys**.
-    *   Clique sur **Trigger deploy** > **Clear cache and deploy site**.
+1. Clique sur le bouton vert **"Use this template"** en haut de cette page
+2. Suis le tutoriel pas à pas → [TUTORIAL.md](TUTORIAL.md)
 
-## 🚀 Développement Local
+> Aucune compétence en code requise. Le tutoriel te guide de A à Z.
 
-Si tu souhaites travailler sur le projet sur ton ordinateur :
-
-1.  Assure-toi d'avoir un fichier `.env` à la racine contenant :
-    ```env
-    API_KEY=Ta_Cle_Ici
-    ```
-2.  Installe les dépendances : `npm install`
-3.  Lance le serveur de développement : `npm run dev`
-
-## 📂 Architecture
-
-*   `src/` : Code source React (Frontend).
-*   `src/content/` : Fichiers Markdown contenant les textes de ton CV. C'est ici que tu peux modifier tes expériences et formations.
-*   `netlify/functions/chat.ts` : La logique "Backend" qui communique avec Gemini.
-
-## Licence
+## ⚖️ Licence
 
 Ce projet est distribué sous **double licence** :
-
-- **Usage open source / non commercial** → [GPL v3](https://www.gnu.org/licenses/gpl-3.0.html)
+- **Open source / non commercial** → [GPL v3](https://www.gnu.org/licenses/gpl-3.0.html)
 - **Usage commercial** → Licence commerciale requise
 
 📩 Pour toute demande d'usage commercial : lecinquiemejour@gmail.com
+
+## ✍️ Auteur
+
+**Jean-Noël Lefebvre** — [LinkedIn](https://www.linkedin.com/in/jnlootsidebox/) · [GitHub](https://github.com/lecinquiemejour-code) · lecinquiemejour@gmail.com

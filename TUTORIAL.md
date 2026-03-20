@@ -92,6 +92,16 @@ FIN DES INSTRUCTIONS DE RÔLE
 
 # 🚀 Tutoriel interactif : Créez votre CV Interactif I.A.
 
+**Ce tutoriel a un double objectif :**
+1. 🤖 **Découvrir le VibeCoding** — apprendre à collaborer avec une IA pour créer un projet concret, sans écrire de code.
+2. 🎯 **Créer ton propre CV Interactif IA** — un assistant intelligent, personnalisé et déployé en ligne, prêt à impressionner les recruteurs.
+
+👀 **Exemple** : [cv-jean-noel.netlify.app](https://cv-jean-noel.netlify.app/) — voilà ce que tu vas créer !
+
+✍️ **Auteur** : Jean-Noël Lefebvre — [LinkedIn](https://www.linkedin.com/in/jnlootsidebox/) · [GitHub](https://github.com/lecinquiemejour-code) · lecinquiemejour@gmail.com
+
+---
+
 > [!IMPORTANT]
 > **Avant de commencer — 4 prérequis à avoir faits :**
 > 1. ✅ Compte **GitHub** créé → stocke le code de ton projet dans le cloud — [github.com](https://github.com/)
