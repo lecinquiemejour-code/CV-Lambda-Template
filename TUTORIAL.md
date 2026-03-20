@@ -12,13 +12,13 @@ L'utilisateur a :
 - Créé le dossier **CVIA/** dans ses Documents, placé ce fichier TUTORIAL.md dedans, et ouvert **CVIA/** dans Antigravity.
 Le tutoriel commence donc directement par la vérification de l'espace de travail.
 
-## GUIDAGE PÉDAGOGIQUE — Étape 2 (Fork), 3 (Rules) & 4 (Clone)
+## GUIDAGE PÉDAGOGIQUE — Étape 2 (Template), 3 (Rules) & 4 (Clone)
 L'installation se déroule en trois étapes clés. Tu guides l'utilisateur pas à pas.
 
-### Étape 2 — Fork (l'utilisateur agit sur GitHub.com)
-→ Explique le concept de fork avec l'analogie de la photocopie.
-→ Guide l'utilisateur clic par clic sur GitHub.com pour forker le dépôt.
-→ Vérifie qu'il voit bien le fork dans son propre compte GitHub.
+### Étape 2 — Use this template (l'utilisateur agit sur GitHub.com)
+→ Explique le concept de template avec l'analogie du modèle Word.
+→ Guide l'utilisateur clic par clic pour créer son repo depuis le template.
+→ Vérifie qu'il voit bien son nouveau repo dans son compte GitHub.
 → Ne passe à l'Étape 3 qu'après confirmation.
 
 ### Étape 3 — Rules (l'utilisateur configure Antigravity)
@@ -28,10 +28,10 @@ L'installation se déroule en trois étapes clés. Tu guides l'utilisateur pas �
 
 ### Étape 4 — Clone (l'assistant exécute après explication et "GO")
 → Explique le concept de clone avec l'analogie du téléchargement intelligent.
-→ Demande à l'utilisateur l'URL de SON fork.
+→ Demande à l'utilisateur l'URL de SON repo (créé à l'étape 2).
 → Explique la commande que tu vas exécuter et POURQUOI.
 → Attends le "GO" de l'utilisateur.
-→ Exécute : `git clone <URL-DU-FORK> .` (ou la procédure `git init/pull` si dossier non vide).
+→ Exécute : `git clone <URL-DU-REPO> .` (ou la procédure `git init/pull` si dossier non vide).
 → Après le clone, vérifie la branche avec `git branch`. Si elle s'appelle `master`, renomme-la en `main` avec `git branch -m master main` (GitHub attend `main`).
 → Une fois les fichiers apparus, félicite l'utilisateur.
 
@@ -93,7 +93,7 @@ FIN DES INSTRUCTIONS DE RÔLE
 ## 🗺️ Tes 7 étapes vers le succès
 
 1. 🛠️ **Étape 1** : Vérifier ton dossier CVIA et rassembler ton matériel
-2. 🔱 **Étape 2** : Créer ta copie personnelle (le Fork)
+2. 📋 **Étape 2** : Créer ton propre projet (depuis le Template)
 3. 🧭 **Étape 3** : Donner ses instructions à l'IA (les RULES)
 4. 📥 **Étape 4** : Télécharger les fichiers (le Clone)
 5. 🎨 **Étape 5** : Personnaliser ton CV
@@ -161,31 +161,28 @@ Dis-moi 'C'est prêt !' et on passe à la récupération du projet !"
 
 <!--
 ================================================================
-ÉTAPE 2 — FORK & CLONE GUIDÉS
+ÉTAPE 2 — CRÉATION DU REPO DEPUIS LE TEMPLATE
 ================================================================
 Ne présente cette étape qu'après validation du CHECKPOINT Étape 1.
-Cette étape se déroule en 2 phases. Guide l'utilisateur avec patience.
-Ne passe JAMAIS à la Phase 2 sans avoir validé la Phase 1.
+Guide l'utilisateur clic par clic avec patience.
 ================================================================
 -->
 
-## 🔱 Étape 2 : Créer ta propre copie du projet (le Fork)
+## 📋 Étape 2 : Créer ton propre projet (depuis le Template)
 
-On va commencer par **copier** le projet modèle dans ton compte GitHub. C'est ce qu'on appelle "forker".
+On va créer **ton propre projet** sur GitHub à partir d'un modèle prêt à l'emploi.
 
 ---
 
-### 🍴 Phase 1 : Le Fork — Créer ta propre copie du projet
+### 📝 Comprendre le template (30 secondes)
 
-#### Comprendre le fork (30 secondes)
+Imagine un **modèle Word** pour une lettre de motivation 📄. Tu ouvres le modèle, tu cliques "Enregistrer sous…" avec ton propre nom, et tu obtiens **ton** document à toi. Le modèle original reste intact, et ton document est **100% indépendant**.
 
-Imagine un **livre de recettes** dans une bibliothèque 📚. Tu n'as pas le droit de modifier l'original, mais tu peux en **photocopier** un exemplaire et l'emmener chez toi. Là, tu pourras modifier les recettes comme tu veux !
+Sur GitHub, c'est exactement la même chose :
+- Le **template** est le modèle de départ (tu ne le modifies pas).
+- Ton **nouveau repo** est ta copie personnelle, rangée dans TON compte GitHub.
 
-En informatique, c'est pareil :
-- Le **projet original** est le livre dans la bibliothèque (tu ne peux pas le modifier).
-- Le **fork** est ta photocopie personnelle, rangée dans TON compte GitHub.
-
-#### Faire le fork pas à pas
+### Créer ton projet pas à pas
 
 1. **Action** : Ouvre ton navigateur et va sur cette page :
    👉 [github.com/lecinquiemejour-code/CV-Lambda-Template](https://github.com/lecinquiemejour-code/CV-Lambda-Template)
@@ -193,32 +190,31 @@ En informatique, c'est pareil :
 2. **Action** : Vérifie que tu es **connecté à GitHub** (ton avatar apparaît en haut à droite).
    - Si tu n'es pas connecté, clique sur **Sign in** en haut à droite.
 
-3. **Action** : Clique sur le bouton **"Fork"** 🍴 — il se trouve en haut à droite de la page, à côté de "Star".
+3. **Action** : Clique sur le bouton vert **"Use this template"** 🟢 (en haut à droite de la page), puis sur **"Create a new repository"**.
 
 4. **Action** : Sur la page qui s'affiche :
-   - Laisse le nom tel quel (`CV-Lambda-Template`)
-   - Clique sur le bouton vert **"Create fork"**
+   - **Repository name** : tape un nom personnalisé, par exemple `CV-Prenom-Nom` (ex : `CV-Marie-Dupont`)
+   - **Description** : tu peux laisser vide
+   - Coche **Private** (ton code reste privé, seul le site déployé sera public)
+   - Laisse **"Include all branches"** décoché
+   - Clique sur le bouton vert **"Create repository"**
 
-5. **Résultat attendu** : Tu arrives sur une page qui ressemble à la précédente, MAIS regarde l'URL en haut de ton navigateur : elle devrait maintenant dire :
+5. **Résultat attendu** : Tu arrives sur la page de TON nouveau repo. Vérifie l'URL en haut de ton navigateur :
    ```
-   github.com/TON-PSEUDO/CV-Lambda-Template
+   github.com/TON-PSEUDO/CV-Prenom-Nom
    ```
-   *(et non plus `lecinquiemejour-code/...`)*
+   Tu devrais voir tous les fichiers du template déjà présents (index.html, identity.json, etc.).
 
 > [!TIP]
-> **Comment savoir si ça a marché ?** Sous le titre du projet, tu verras écrit en petit :
-> *"forked from lecinquiemejour-code/CV-Lambda-Template"*
-> Si tu vois ça → bravo, ta copie personnelle existe ! 🎉
+> **Comment savoir si ça a marché ?** Tu vois TON pseudo dans l'URL et les fichiers sont là — c'est ton projet à toi ! 🎉
 
 <!-- [CHECKPOINT ÉTAPE 2]
 Question à poser avant de passer à l'Étape 3 :
-"Est-ce que tu vois bien TON pseudo dans l'URL (github.com/TON-PSEUDO/CV-Lambda-Template) ?
-Et est-ce que tu vois la mention 'forked from...' sous le titre ? 🍴
+"Est-ce que tu vois bien TON pseudo dans l'URL (github.com/TON-PSEUDO/CV-Prenom-Nom) ?
+Et est-ce que les fichiers (index.html, identity.json...) apparaissent sur la page ? 📁
 Dis-moi 'C'est bon !' et on passe à la configuration de tes règles !"
-→ Si non, guide-le : vérifier la connexion GitHub, refaire le fork.
+→ Si non, guide-le : vérifier la connexion GitHub, refaire la création depuis le template.
 -->
-
----
 
 ---
 
@@ -310,25 +306,25 @@ Ne présente cette étape qu'après validation du CHECKPOINT Étape 3.
 
 ## 📥 Étape 4 : Télécharger les fichiers (Le Clone)
 
-Ton fork existe maintenant sur GitHub ("dans le cloud" ☁️), mais les fichiers ne sont pas encore sur ton ordinateur. Le **clone**, c'est comme **télécharger** ces fichiers — mais en version intelligente :
+Ton projet existe maintenant sur GitHub ("dans le cloud" ☁️), mais les fichiers ne sont pas encore sur ton ordinateur. Le **clone**, c'est comme **télécharger** ces fichiers — mais en version intelligente :
 - Un téléchargement classique copie les fichiers une fois, et c'est fini.
 - Un clone garde un **lien** avec GitHub, ce qui permettra plus tard de publier tes modifications automatiquement.
 
-### Récupérer l'adresse de ton fork
+### Récupérer l'adresse de ton repo
 
-1. **Action** : Sur la page de TON fork (celle avec ton pseudo dans l'URL), clique sur le bouton vert **"<> Code"**.
+1. **Action** : Sur la page de TON repo (celui créé à l'Étape 2, avec ton pseudo dans l'URL), clique sur le bouton vert **"<> Code"**.
 2. **Action** : Dans le petit menu qui apparaît, vérifie que l'onglet **HTTPS** est sélectionné.
 3. **Action** : Copie l'adresse qui s'affiche (bouton 📋 à droite). Elle ressemble à :
    ```
-   https://github.com/TON-PSEUDO/CV-Lambda-Template.git
+   https://github.com/TON-PSEUDO/CV-Prenom-Nom.git
    ```
 4. **Action** : Colle cette adresse dans le chat ici, en me disant :
-   > *"Voici l'adresse de mon fork : [colle l'adresse]"*
+   > *"Voici l'adresse de mon repo : [colle l'adresse]"*
 
 ### Ce que je vais faire pour toi
 
 Je vais exécuter une commande qui :
-- **Télécharge** tous les fichiers de ton fork dans ce dossier `CVIA/`
+- **Télécharge** tous les fichiers de ton repo dans ce dossier `CVIA/`
 - **Garde le lien** avec ton compte GitHub pour les futures mises à jour
 
 > [!NOTE]
@@ -482,8 +478,7 @@ Ne présente cette étape qu'après validation du CHECKPOINT Étape 6.
 C'est l'étape finale. Accompagne avec enthousiasme !
 Avant tout `git push`, vérifie l'authentification avec `gh auth status`.
 Si non connecté, guide l'utilisateur avec `gh auth login` (protocole HTTPS, navigateur).
-Pour publier le code, utilise `gh repo create CV-Prenom-Nom --public --source=. --remote=origin --push`.
-Ne pousse PAS vers le fork d'origine — crée toujours un nouveau repo dédié.
+Le repo existe déjà (créé à l'étape 2). Fais simplement un `git add .`, `git commit` et `git push`.
 Après le déploiement Netlify, rappelle au user de vérifier que les images ET le chatbot fonctionnent sur le site en ligne.
 ================================================================
 -->
@@ -520,16 +515,11 @@ C'est le moment d'activer le cerveau de ton chatbot. La clé API est un code sec
 
 ### 7.2 — Publier ton code sur GitHub
 
-On va créer un dépôt GitHub **tout neuf**, rien qu'à toi, avec un nom personnalisé.
+Ton code est déjà lié à ton dépôt GitHub (celui créé à l'Étape 2). Il suffit d'envoyer tes modifications.
 
-- **Action** : Dis-moi ton prénom et ton nom (ex : *"Marie Dupont"*), je crée le dépôt `CV-Marie-Dupont` et j'y envoie ton code.
+- **Action** : Dis-moi **"Pousse mon code !"** et j'envoie tout vers GitHub.
 
-> [!IMPORTANT]
-> **Pourquoi un nouveau dépôt (et pas le fork) ?**
-> Le fork servait à récupérer le modèle. Ton CV mérite son propre espace, avec un nom qui te correspond !
-> Cela évite aussi des problèmes de permissions lors de la publication.
-
-- **Résultat** : Ton code est visible sur `github.com/TON-PSEUDO/CV-Prenom-Nom`. Garde cette adresse, on en aura besoin juste après !
+- **Résultat** : Ton code personnalisé est visible sur `github.com/TON-PSEUDO/CV-Prenom-Nom`. Garde cette adresse, on en aura besoin juste après !
 
 ### 7.3 — Mettre en ligne sur Netlify
 
