@@ -71,7 +71,7 @@ L'installation se déroule en quatre étapes clés. Tu guides l'utilisateur pas 
 - Quand l'utilisateur fournit une image de projet pour le portfolio : rappelle-lui de la mettre dans `public/` et d'utiliser un chemin `/nom-du-fichier.ext` dans `portfolio.md`.
 - **Nettoyage des fichiers template** : après avoir copié les fichiers de l'utilisateur dans `public/`, supprime les fichiers template devenus orphelins (`photo.png`, `bot-avatar.jpg`, `cv-template.pdf`) pour éviter la confusion.
 - **Extraction PDF** : quand l'utilisateur demande d'extraire le contenu de son CV PDF, utilise `view_file` pour le lire directement. Ne crée PAS de script Node.js d'extraction (les bibliothèques comme pdf-parse changent d'API fréquemment). Si `view_file` ne peut pas lire le PDF, demande à l'utilisateur de copier-coller le texte dans le chat.
-- **Validation Séquentielle (Fin Étape 6)** : Avant de passer à l'étape 7, tu DOIS présenter le contenu de 4 fichiers clés pour validation. Procède un par un : `identity.json`, puis `experiences.md`, puis `portfolio.md`, puis `greeting.md`. Pour chaque fichier, affiche son contenu complet dans le chat et demande "Est-ce que ce contenu te convient ?". Ne passe pas au fichier suivant sans le "OK" de l'utilisateur.
+- **Validation Séquentielle (Fin Étape 6)** : Avant de passer à l'étape 7, tu DOIS montrer le contenu de chaque fichier clé dans le chat pour validation. Procède un par un, dans cet ordre : `identity.json`, puis `experiences.md`, puis `portfolio.md`, puis `greeting.md`. Pour chaque fichier : (1) lis-le avec `view_file`, (2) affiche son contenu INTÉGRALEMENT dans le chat en le formatant proprement, (3) explique brièvement ce que contient chaque section, (4) demande "Est-ce que ce contenu te convient ? Tu veux modifier quelque chose ?". Ne passe au fichier suivant qu'après le "OK" explicite de l'utilisateur.
 
 ## PROTOCOLE DE DÉMARRAGE
 Si l'utilisateur dit "lance le tutoriel", "commence", "on y va" ou équivalent :
@@ -618,11 +618,12 @@ Pour chaque modification, je vais :
 3. Te montrer le résultat.
 
 ### 6.6 — Tester ton CV en local
-- **Action** : Dans Antigravity, cherche le bouton **Preview** ou l'icône de globe 🌐.
-- **Résultat** : Ton site s'affiche ! Si tu m'as donné ta clé API, le chatbot répond déjà.
+- **Action** : Dis-moi **"Lance la prévisualisation"** et je démarre le serveur local pour toi.
+- **Action** : Ouvre ton navigateur (Chrome, Firefox…) et va sur 👉 **[http://localhost:3000](http://localhost:3000)**
+- **Résultat** : Ton site s'affiche dans ton vrai navigateur ! Si tu m'as donné ta clé API, le chatbot répond déjà.
 
-> [!NOTE]
-> **Le PDF se télécharge avec un nom bizarre ?** C'est normal ! Le navigateur intégré d'Antigravity donne parfois des noms temporaires (type UUID) aux fichiers téléchargés. **Pas d'inquiétude** : dans un vrai navigateur (Chrome, Firefox…), le PDF se télécharge avec son nom correct. Tu pourras vérifier après le déploiement à l'Étape 8.
+> [!TIP]
+> **Pourquoi un vrai navigateur ?** Le navigateur intégré d'Antigravity peut avoir des comportements différents (noms de fichiers PDF modifiés, etc.). En utilisant Chrome ou Firefox, tu vois ton CV exactement comme tes futurs visiteurs le verront.
 
 ### 6.7 — Validation finale de tes contenus
 
