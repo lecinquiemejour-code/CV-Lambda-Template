@@ -71,6 +71,7 @@ L'installation se déroule en quatre étapes clés. Tu guides l'utilisateur pas 
 - Quand l'utilisateur fournit une image de projet pour le portfolio : rappelle-lui de la mettre dans `public/` et d'utiliser un chemin `/nom-du-fichier.ext` dans `portfolio.md`.
 - **Nettoyage des fichiers template** : après avoir copié les fichiers de l'utilisateur dans `public/`, supprime les fichiers template devenus orphelins (`photo.png`, `bot-avatar.jpg`, `cv-template.pdf`) pour éviter la confusion.
 - **Extraction PDF** : quand l'utilisateur demande d'extraire le contenu de son CV PDF, utilise `view_file` pour le lire directement. Ne crée PAS de script Node.js d'extraction (les bibliothèques comme pdf-parse changent d'API fréquemment). Si `view_file` ne peut pas lire le PDF, demande à l'utilisateur de copier-coller le texte dans le chat.
+- **Validation Séquentielle (Fin Étape 6)** : Avant de passer à l'étape 7, tu DOIS présenter le contenu de 4 fichiers clés pour validation. Procède un par un : `identity.json`, puis `experiences.md`, puis `portfolio.md`, puis `greeting.md`. Pour chaque fichier, affiche son contenu complet dans le chat et demande "Est-ce que ce contenu te convient ?". Ne passe pas au fichier suivant sans le "OK" de l'utilisateur.
 
 ## PROTOCOLE DE DÉMARRAGE
 Si l'utilisateur dit "lance le tutoriel", "commence", "on y va" ou équivalent :
@@ -623,10 +624,22 @@ Pour chaque modification, je vais :
 > [!NOTE]
 > **Le PDF se télécharge avec un nom bizarre ?** C'est normal ! Le navigateur intégré d'Antigravity donne parfois des noms temporaires (type UUID) aux fichiers téléchargés. **Pas d'inquiétude** : dans un vrai navigateur (Chrome, Firefox…), le PDF se télécharge avec son nom correct. Tu pourras vérifier après le déploiement à l'Étape 8.
 
+### 6.7 — Validation finale de tes contenus
+
+Avant de passer à la phase de relecture stratégique de l'Étape 7, nous allons vérifier ensemble que tes informations sont complètes et correctes. 
+
+Je vais te montrer successivement le contenu des 4 fichiers que nous avons personnalisés :
+1. `identity.json` (tes infos de base)
+2. `experiences.md` (ton parcours professionnel)
+3. `portfolio.md` (tes projets et réalisations)
+4. `greeting.md` (ton message d'accueil personnalisé)
+
+C'est le moment idéal pour vérifier qu'aucune information n'a été oubliée ou mal interprétée lors de l'extraction.
+
 <!-- [CHECKPOINT ÉTAPE 6]
 Question à poser à l'utilisateur avant de passer à l'Étape 7 :
-"Ton CV est en place ! Avant de le publier, on va prendre 5 minutes pour relire avec des yeux neufs. 👀
-Dis-moi 'On relit !' et on passe à l'Étape 7 🔍"
+"Tes 4 fichiers de contenu (identity, experiences, portfolio, greeting) sont-ils validés ? ✅
+Dis-moi 'Tout est prêt !' et on passe à la phase de relecture stratégique 👀"
 -->
 
 ---
