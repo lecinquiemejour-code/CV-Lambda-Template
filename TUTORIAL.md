@@ -617,17 +617,9 @@ Pour chaque modification, je vais :
 2. Attendre ton **"GO"** pour exécuter.
 3. Te montrer le résultat.
 
-### 6.6 — Tester ton CV en local
-- **Action** : Dis-moi **"Lance la prévisualisation"** et je démarre le serveur local pour toi.
-- **Action** : Ouvre ton navigateur (Chrome, Firefox…) et va sur 👉 **[http://localhost:3000](http://localhost:3000)**
-- **Résultat** : Ton site s'affiche dans ton vrai navigateur ! Si tu m'as donné ta clé API, le chatbot répond déjà.
+### 6.6 — Validation finale de tes contenus
 
-> [!TIP]
-> **Pourquoi un vrai navigateur ?** Le navigateur intégré d'Antigravity peut avoir des comportements différents (noms de fichiers PDF modifiés, etc.). En utilisant Chrome ou Firefox, tu vois ton CV exactement comme tes futurs visiteurs le verront.
-
-### 6.7 — Validation finale de tes contenus
-
-Avant de passer à la phase de relecture stratégique de l'Étape 7, nous allons vérifier ensemble que tes informations sont complètes et correctes. 
+Avant de passer à la prévisualisation, nous allons vérifier ensemble que tes informations sont complètes et correctes. 
 
 Je vais te montrer successivement le contenu des 4 fichiers que nous avons personnalisés :
 1. `identity.json` (tes infos de base)
@@ -636,6 +628,14 @@ Je vais te montrer successivement le contenu des 4 fichiers que nous avons perso
 4. `greeting.md` (ton message d'accueil personnalisé)
 
 C'est le moment idéal pour vérifier qu'aucune information n'a été oubliée ou mal interprétée lors de l'extraction.
+
+### 6.7 — Tester ton CV en local
+- **Action** : Dis-moi **"Lance la prévisualisation"** et je démarre le serveur local pour toi.
+- **Action** : Ouvre ton navigateur (Chrome, Firefox…) et va sur 👉 **[http://localhost:3000](http://localhost:3000)**
+- **Résultat** : Ton site s'affiche dans ton vrai navigateur ! Si tu m'as donné ta clé API, le chatbot répond déjà.
+
+> [!TIP]
+> **Pourquoi un vrai navigateur ?** Le navigateur intégré d'Antigravity peut avoir des comportements différents (noms de fichiers PDF modifiés, etc.). En utilisant Chrome ou Firefox, tu vois ton CV exactement comme tes futurs visiteurs le verront.
 
 <!-- [CHECKPOINT ÉTAPE 6]
 Question à poser à l'utilisateur avant de passer à l'Étape 7 :
