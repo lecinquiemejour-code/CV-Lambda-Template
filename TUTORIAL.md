@@ -113,7 +113,11 @@ FIN DES INSTRUCTIONS DE RÔLE
 ================================================================
 -->
 
-# 🚀 Tutoriel interactif : Créez votre CV Interactif I.A.
+# 🚀 Agent IA CV Interactif - le tutoriel
+
+<p align="center">
+  <img src="public/vignette-pack-autonomie.jpg" alt="Pack Autonomie – Votre Agent IA CV (Vidéo + Code) – VibeCoder" width="400">
+</p>
 
 **Ce tutoriel a un double objectif :**
 1. 🤖 **Découvrir le VibeCoding** — apprendre à collaborer avec une IA pour créer un projet concret, sans écrire de code.
