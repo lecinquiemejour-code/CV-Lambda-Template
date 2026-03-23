@@ -1,4 +1,8 @@
-# 🚀 CV Interactif IA — Template
+# 🚀 Agent IA CV Interactif
+
+<p align="center">
+  <img src="public/vignette-pack-autonomie.jpg" alt="Pack Autonomie – Votre Agent IA CV (Vidéo + Code) – VibeCoder" width="400">
+</p>
 
 Crée ton propre CV intelligent en ligne, propulsé par l'IA Google Gemini.
 
