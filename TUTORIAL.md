@@ -512,6 +512,13 @@ Si un outil manque, je vais essayer de l'installer automatiquement grâce à `wi
 | **GitHub CLI** | [cli.github.com](https://cli.github.com/) | Clique sur "Download for Windows", puis installe. |
 | **Poppler** (pdftotext) | [oschwartz10612/poppler-windows](https://github.com/oschwartz10612/poppler-windows/releases) | Télécharge le `.zip`, décompresse-le, et ajoute le dossier `Library\bin\` au PATH. |
 
+> [!TIP]
+> **💡 winget ne fonctionne pas dans Antigravity ?** Pas de panique ! Un script d'installation est inclus dans le projet :
+> 1. Ouvre l'**Explorateur de fichiers** Windows et va dans ton dossier `CVIA/`.
+> 2. Fais **clic droit** sur le fichier `install-outils.ps1` → **Exécuter avec PowerShell**.
+> 3. Le script installe automatiquement les 4 outils manquants.
+> 4. Une fois terminé, **ferme et rouvre Antigravity**.
+
 > [!IMPORTANT]
 > **Après chaque installation** (automatique ou manuelle), il faut **fermer et rouvrir Antigravity** pour que l'outil soit reconnu. C'est comme redémarrer une machine après avoir branché un nouvel appareil.
 
@@ -532,7 +539,8 @@ Si l'utilisateur est bloqué sur l'installation, diagnostique avec ce tableau :
 
 | Symptôme | Cause probable | Solution |
 |---|---|---|
-| `winget` non reconnu | Windows trop ancien ou Microsoft Store absent | Donner le lien de téléchargement manuel |
+| `winget` non reconnu | Windows trop ancien ou Microsoft Store absent | Proposer le script `install-outils.ps1` (clic droit → Exécuter avec PowerShell depuis l'Explorateur). Si ça ne marche pas non plus, donner les liens manuels. |
+| `winget` échoue dans Antigravity | Le terminal intégré n'a pas les mêmes droits | Proposer le script `install-outils.ps1` depuis un PowerShell externe |
 | `git --version` ne marche pas après install | PATH non mis à jour | Fermer et rouvrir Antigravity (rappeler que c'est obligatoire) |
 | Version trop ancienne (Node < 18) | Installation précédente obsolète | Désinstaller l'ancienne version, réinstaller via les liens manuels |
 | Erreur de proxy ou timeout | Réseau d'entreprise avec proxy | Demander à l'utilisateur s'il est sur un réseau d'entreprise, suggérer un réseau personnel |
