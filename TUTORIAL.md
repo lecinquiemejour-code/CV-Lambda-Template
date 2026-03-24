@@ -171,8 +171,9 @@ FIN DES INSTRUCTIONS DE RÔLE
 
 > [!TIP]
 > **💡 Choix du modèle IA :** Pour la meilleure expérience avec ce tutoriel, sélectionne le modèle
-> **Claude Opus 4.6 (Thinking)** dans Antigravity (en bas à gauche du chat). Ce modèle « réfléchit »
-> avant d'agir, ce qui donne des réponses plus précises et mieux expliquées.
+> **Claude Opus 4.6 (Thinking)** dans Antigravity (en bas à gauche du chat), puis passe en mode **FAST**
+> (icône ⚡ à côté du sélecteur de modèle). Ce modèle « réfléchit » avant d'agir pour des réponses
+> précises, et le mode FAST accélère l'exécution sans sacrifier la qualité.
 >
 > **🎮 Tu es le pilote :** N'hésite jamais à :
 > - ❓ **Poser des questions** — aucune question n'est bête, surtout quand on débute !
