@@ -156,6 +156,9 @@ FIN DES INSTRUCTIONS DE RÔLE
 > **Ce tutoriel est conçu pour Windows.** Les commandes et chemins sont adaptés à Windows 10/11.
 > 🍎 **Sur Mac ?** Les grandes étapes sont identiques, mais les commandes d'installation diffèrent — voir les notes 🍎 dans l'Étape 4.
 
+> [!WARNING]
+> **🛡️ Antivirus** : certains antivirus (Windows Defender, Norton, Avast…) peuvent bloquer les outils de développement. Pour éviter des pertes de temps, **désactive ton antivirus pendant toute la durée du tutoriel** et réactive-le une fois terminé.
+
 > [!NOTE]
 > **Comment démarrer ce tutoriel :**
 > 1. Crée un dossier `CVIA/` **à la racine de ton disque** (ex : `C:\CVIA`).
