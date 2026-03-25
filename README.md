@@ -25,8 +25,7 @@ Crée ton propre CV intelligent en ligne, propulsé par l'IA Google Gemini.
 
 ## 🏁 Comment commencer
 
-1. Clique sur le bouton vert **"Use this template"** en haut de cette page
-2. Suis le tutoriel pas à pas → [TUTORIAL.md](TUTORIAL.md)
+Suis le tutoriel pas à pas → [TUTORIAL.md](TUTORIAL.md)
 
 > Aucune compétence en code requise. Le tutoriel te guide de A à Z.
 

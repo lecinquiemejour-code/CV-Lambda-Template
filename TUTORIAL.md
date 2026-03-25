@@ -146,11 +146,11 @@ FIN DES INSTRUCTIONS DE RÔLE
 
 > [!IMPORTANT]
 > **Avant de commencer — 5 prérequis à avoir faits :**
-> 1. ✅ Compte **GitHub** créé → stocke le code de ton projet dans le cloud — [github.com](https://github.com/)
-> 2. ✅ Compte **Netlify** créé (connecté avec GitHub) → met ton site en ligne avec une adresse publique — [netlify.com](https://www.netlify.com/)
-> 3. ✅ **Google AI Pro** activé (1 mois offert à 0€) → donne accès à Antigravity — [gemini.google/subscriptions](https://gemini.google/subscriptions/)
-> 4. ✅ **Antigravity** installé et connecté avec ton compte Google AI Pro → ton éditeur de VibeCoding pour collaborer avec l'IA — [antigravity.google](https://antigravity.google/)
-> 5. ✅ **Google AI Studio** accessible (même compte Google) → pour créer ta **clé API**, le code secret qui fait fonctionner le chatbot — [aistudio.google.com](https://aistudio.google.com/)
+> 1. ✅ Compte **GitHub** créé → tu y rangeras le code de ton projet, comme un Google Drive pour le code — [github.com](https://github.com/)
+> 2. ✅ Compte **Netlify** créé → c'est lui qui publiera ton CV sur Internet avec une vraie adresse web — [netlify.com](https://www.netlify.com/)
+> 3. ✅ **Google AI Pro** activé (1 mois offert à 0€) → cet abonnement te donnera accès à Antigravity, ton assistant IA — [gemini.google/subscriptions](https://gemini.google/subscriptions/)
+> 4. ✅ **Antigravity** installé et connecté avec ton compte Google AI Pro → c'est ton outil de Vibe Coding : tu y collaboreras avec l'IA pour créer ton CV, sans écrire de code — [antigravity.google](https://antigravity.google/)
+> 5. ✅ **Google AI Studio** accessible (même compte Google) → tu y créeras ta **clé API**, le code secret qui permettra à ton chatbot de répondre aux visiteurs — [aistudio.google.com](https://aistudio.google.com/)
 
 > [!WARNING]
 > **Ce tutoriel est conçu pour Windows.** Les commandes et chemins sont adaptés à Windows 10/11.
