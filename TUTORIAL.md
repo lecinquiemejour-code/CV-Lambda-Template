@@ -60,7 +60,7 @@ L'installation se déroule en quatre étapes clés. Tu guides l'utilisateur pas 
   Procédure complète :
   ```
   Rename-Item TUTORIAL.md TUTORIAL.md.bak
-  git init
+  git init -b main
   git remote add origin <URL-DU-REPO>
   git pull origin main
   Remove-Item TUTORIAL.md.bak
@@ -498,6 +498,13 @@ Poppler est un outil qui sait « lire » les fichiers PDF et en extraire le text
 On va vérifier si ces outils sont déjà installés sur ton ordinateur. Si ce n'est pas le cas, je peux les installer pour toi !
 
 - **Action** : Dis-moi **« Vérifie mes outils »** et je lance les vérifications automatiquement.
+
+> [!IMPORTANT]
+> **Configuration Git recommandée :** Après l'installation de Git, exécute cette commande une seule fois pour éviter les conflits de nommage de branche :
+> ```
+> git config --global init.defaultBranch main
+> ```
+> Cela garantit que tous tes futurs projets utiliseront `main` (la norme GitHub) au lieu de `master`.
 
 Si un outil manque, je vais essayer de l'installer automatiquement grâce à `winget` (le gestionnaire de paquets de Windows). C'est comme un app store en ligne de commande — rapide et propre.
 
