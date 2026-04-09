@@ -152,3 +152,14 @@
   - Action : Passer `APP_VERSION` de `v1.0.4` à `v1.0.5`.
 - [ ] **Étape 5 : Déploiement et tests finaux**
   - Action : Git commit, push et tests avec les scénarios de la spec.
+
+---
+
+# Plan d'action : Passer l'agent IA au double (limites et contrôle)
+
+- [x] **Étape 1 : Choix du périmètre de doublement**
+  - Action requise (Utilisateur) : Valider quelle option correspond le mieux à "Passe au double". (Option 1 choisie : Doubler uniquement l'expression de l'IA).
+- [x] **Étape 2 : Modification des fichiers ciblés**
+  - Action : Éditer `src/content/instructions.md` pour passer la limite à 10-14 lignes.
+- [x] **Étape 3 : Tests et validation**
+  - Action : Vérifier le comportement et déploiement via git push.
