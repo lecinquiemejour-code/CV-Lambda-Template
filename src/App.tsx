@@ -24,7 +24,7 @@ const BotAvatar = () => (
   </div>
 );
 
-const APP_VERSION = "v1.0.10";
+const APP_VERSION = "v1.0.11";
 
 type Message = {
   id: string;
@@ -373,7 +373,7 @@ export default function App() {
       </main>
 
       {/* Zone de saisie (Input Area) */}
-      <footer className="bg-white border-t border-gray-200 p-4 sm:p-6 print:hidden">
+      <footer className="bg-white border-t border-gray-200 pt-2 pb-2 sm:pt-3 sm:pb-3 px-4 sm:px-6 print:hidden">
         <div className="max-w-4xl mx-auto">
           {/* Suggestions rapides (affichées uniquement au début) */}
           {messages.length === 1 && (
@@ -391,7 +391,7 @@ export default function App() {
           )}
 
           {/* Formulaire de saisie */}
-          <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-0">
             <div className="flex gap-2">
               <input
                 type="text"
@@ -419,9 +419,12 @@ export default function App() {
               </span>
             </div>
           </form>
-          <div className="text-center mt-3">
+          <div className="text-center mt-0.5">
             <p className="text-xs text-gray-400">
               L'IA peut faire des erreurs. Vérifiez les informations importantes.
+            </p>
+            <p className="text-xs text-gray-400 mt-1">
+              🚀 Créez votre propre CV interactif IA — <a href="https://lecinquiemejour.gumroad.com/l/agent-IA-CV-interactif" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Formation en ligne</a>
             </p>
           </div>
         </div>
