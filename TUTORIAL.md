@@ -684,10 +684,25 @@ La clé API est un code secret qui permet à ton site de communiquer avec l'inte
 > [!IMPORTANT]
 > **Ta clé API est secrète.** Ne la partage jamais publiquement (pas dans un message, pas sur GitHub).
 
+> [!TIP]
+> **Le savais-tu ?** La clé API que tu viens de créer est gratuite et parfaite pour tester ton CV. Mais si tu cherches activement un emploi ou des clients, il existe une option payante fortement recommandée (voir la section 6.0.bis juste en dessous).
+
 **Installer la clé dans ton projet :**
 - **Action** : Dans le chat Antigravity, dis-moi :
   > *"Voici ma clé API Google : [colle ta clé]. Peux-tu l'installer dans le projet ?"*
 - **Résultat** : J'ajoute ta clé dans le fichier `.env` du projet — le chatbot sera actif dès la prévisualisation locale. 🤖
+
+### 6.0.bis — Clé API : Gratuite ou Payante ? (Recommandation)
+
+Le mode gratuit de l'API Google Gemini fonctionne très bien, mais il a deux limites importantes pour un CV professionnel :
+1. **Confidentialité** : Google se réserve le droit d'utiliser les conversations gratuites pour entraîner ses modèles d'IA.
+2. **Qualité de service** : En version gratuite, le chatbot peut parfois subir des latences (lenteurs) ou renvoyer des erreurs si les serveurs sont chargés.
+
+Si tu es en recherche d'emploi ou que tu promeus tes services de freelance, je te **recommande fortement** de configurer un compte de facturation ("Pay-as-you-go") dans Google AI Studio. 
+- **Le coût est dérisoire** : Tu ne paies qu'à l'usage. Pour un trafic de CV classique, cela dépasse rarement quelques centimes à 1 ou 2 euros par mois.
+- **La garantie** : Tes données (et celles du recruteur) restent privées, et le chatbot sera toujours rapide et fiable.
+
+*Tu peux tout à fait rester en mode gratuit pendant toute la construction (Étape 6), et passer en facturation juste avant la publication.*
 
 ### 6.1 — L'astuce "Gain de temps" ⚡
 Si tu as un ancien CV en PDF, commence par ça !
@@ -853,6 +868,12 @@ Tu as créé ta clé API à l'Étape 6.0 et elle fonctionne déjà en local. Pou
 
 > [!TIP]
 > **Tu ne retrouves plus ta clé ?** Retourne sur [Google AI Studio](https://aistudio.google.com/) → **Get API key** pour la retrouver ou en créer une nouvelle.
+
+> [!IMPORTANT]
+> **Dernier conseil avant la mise en ligne 🚀**
+> Comme vu à l'Étape 6.0.bis, si ton CV s'adresse à de vrais recruteurs ou clients, c'est le moment idéal pour associer une carte bancaire à ton compte Google AI Studio ("Pay-as-you-go").
+> - **Le coût est dérisoire** : Tu ne paies qu'à l'usage. Pour un trafic de CV classique, cela dépasse rarement quelques centimes à 1 ou 2 euros par mois.
+> - **La garantie** : Tes données (et celles du recruteur) restent privées, et le chatbot sera toujours rapide et fiable.
 
 ### 8.2 — Publier ton code sur GitHub
 
